@@ -1,1 +1,43 @@
-
+ h1 {
+      color: red;
+      text-align: left;
+    }
+    p {
+      margin: 100px; 
+      color: white;
+      font-family: comic sans ms;
+      font-size: 20px;
+    }
+    .exemple {
+    
+      background-color: #9E9086;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      margin: 100px;          /* espace extérieur (haut, bas, gauche, droite) */
+      padding-left: 5px;     /* marge intérieure gauche */
+      padding-right: 2px;    /* marge intérieure droite */
+    }
+    header {
+    	width:600px;
+    	height:50px; 
+        /* un beau violet */
+    	background-color:#9E9086; 
+    } 
+    article { 
+    	width:600px; 
+    	height:400px; 
+    	background-color:#FFCC00; 
+    } 
+    #pied-de-page { 
+    	width:400px; 
+    	height:50px; 
+        /* on habille en "taupe" le contenu de la balise dont l'identifiant est "pied-de-page" */
+    	background-color:#9E9086; 
+    }
+    .menu { 
+    	position:fixed;
+    	width:100px; 
+    	height:100px; 
+    	background-color:#FF6699;
+    	clear:both;
+    }
