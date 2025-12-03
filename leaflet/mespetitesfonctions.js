@@ -10,13 +10,10 @@ function loadLeafletMap(){
 		const marker = L.marker([48.8271, 2.3646]).addTo(map)
 			.bindPopup('<img src="https://upload.wikimedia.org/wikipedia/fr/4/42/CentrePMF_Paris1.jpg" width="100%"><a href="https://www.pantheonsorbonne.fr/"><strong>Université PARIS 1</strong></a><br>Site PMF (Tolbiac).').openPopup();
 	}
-
-
 	function onMapClick(e) {
 		popup
 			.setLatLng(e.latlng)
 			.setContent(`You clicked the map at ${e.latlng.toString()}`)
 			.openOn(map);
 	}
-
 	map.on('click', onMapClick);
