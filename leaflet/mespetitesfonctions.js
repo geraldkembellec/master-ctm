@@ -6,7 +6,7 @@ function loadLeafletMap(){
 			maxZoom: 19,
 			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 		}).addTo(map);
-
+	 	/* Je personnalise l'épingle avec une image en HTML, un lien et du texte */
 		const marker = L.marker([48.8271, 2.3646]).addTo(map)
 			.bindPopup('<img src="https://upload.wikimedia.org/wikipedia/fr/4/42/CentrePMF_Paris1.jpg" width="100%"><a href="https://www.pantheonsorbonne.fr/"><strong>Université PARIS 1</strong></a><br>Site PMF (Tolbiac).').openPopup();
 	}
