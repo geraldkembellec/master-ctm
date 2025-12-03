@@ -11,6 +11,11 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
+    <script>
+      function loadLeafletMap(){
+        var map = L.map('map').setView([51.505, -0.09], 13);
+      }
+    </script>
     <!-- Primary Meta Tags -->
 <title>Master parcours Communication, technologies de la connaissance et management de l'information - Université Paris 1 Panthéon-Sorbonne</title>
 <meta name="title" content="Master parcours Communication, technologies de la connaissance et management de l'information - Université Paris 1 Panthéon-Sorbonne" />
@@ -32,7 +37,7 @@
 
 <!-- Meta Tags Generated with https://metatags.io -->
   </head>
-  <body>
+  <body onload=javascript:loadLeafletMap();>
     <h1>Master parcours <em>Communication, technologies de la connaissance et <mark>management de l'information</mark></em></h1>
     <p>Bienvenue dans le <strong>Master CTM</strong> ça c'est génial.</p>
     <p>
