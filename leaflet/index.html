@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Leaflet</title>
+    <!-- Style leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" 
+          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" >
+    <!-- Mon style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Mon code pour placer la fac sur la carte -->
+    <script src="mespetitesfonctions.js"></script>
+    <!-- Le code JS de leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" 
+    	      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+<!-- j'indique que quand le body se charge 
+	 on lance la fonction loadLeafletMap() qui est dans le fichier "mespetitesfonctions.js" -->
+<body onload="javascript:loadLeafletMap();">
+	<h1>Ma fac</h1>
+	<div id="map" class="leaflet-container"></div>
+</body>
+</html>
