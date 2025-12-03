@@ -1,5 +1,6 @@
 function loadLeafletMap(){
 		const lien = "https://www.pantheonsorbonne.fr/";
+	    /* je centre la carte sur Paris coordonnées 48.8271, 2.3646 avec un zoom 15 */
 		const map = L.map('map').setView([48.8271, 2.3646], 15);
 		const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			maxZoom: 19,
