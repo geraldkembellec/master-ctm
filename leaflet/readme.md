@@ -40,3 +40,6 @@ L’objectif est d’afficher une carte centrée sur la localisation d’une fac
       <link rel="stylesheet" href="style.css">
       <script src="mespetitesfonctions.js"></script>
       ```
+      
+## Rendu visuel
+![Visuel leaflet : integration du site PMF (Tolbiac)](rendu-leaflet.png "Le rendu")
