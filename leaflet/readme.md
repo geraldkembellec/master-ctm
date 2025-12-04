@@ -20,13 +20,16 @@ L’objectif est d’afficher une carte centrée sur la localisation d’une fac
 
 ## Fonctionnement
   ### 1. Chargement de Leaflet
-    Le fichier HTML inclut :
-      - la feuille de style Leaflet
-      - la bibliothèque JavaScript Leaflet
-    ```html  
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-    ```
+  Le fichier HTML inclut :
+  
+    - la feuille de style Leaflet
+    - la bibliothèque JavaScript Leaflet
+
+      
+      ```html  
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+      <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+      ```
   Cela permet d’utiliser directement les composants et fonctions fournis par Leaflet.
 
   ### 2. Chargement des styles et scripts personnalisés
