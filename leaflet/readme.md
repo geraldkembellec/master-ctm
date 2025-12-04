@@ -43,3 +43,8 @@ L’objectif est d’afficher une carte centrée sur la localisation d’une fac
       
 ## Rendu visuel
 ![Visuel leaflet : integration du site PMF (Tolbiac)](rendu-leaflet.png "Le rendu")
+
+### Documentation Leaflet : https://leafletjs.com/
+
+Tutoriels OpenStreetMap : https://wiki.openstreetmap.org
+Exemples officiels Leaflet : https://leafletjs.com/examples/
