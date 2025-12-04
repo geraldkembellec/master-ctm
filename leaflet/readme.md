@@ -1,5 +1,5 @@
 # Intégration de Leaflet
-Ce projet présente un exemple minimaliste d’intégration de *Leaflet*, une bibliothèque JavaScript open source permettant d’afficher des cartes interactives.
+Ce projet présente un exemple minimaliste d’intégration de *Leaflet* version 1.9.3, une bibliothèque JavaScript open source permettant d’afficher des cartes interactives.
 L’objectif est d’afficher une carte centrée sur la localisation d’une faculté, en utilisant une fonction JavaScript personnalisée.
 
 ## Structure du projet
@@ -11,9 +11,9 @@ L’objectif est d’afficher une carte centrée sur la localisation d’une fac
   └── mespetitesfonctions.js
   ```
 
-- index.html : page principale contenant l’intégration de Leaflet et l’appel à la fonction loadLeafletMap().
-- style.css : fichier de styles personnalisé (dimensions de la carte, mise en page, etc.).
-- mespetitesfonctions.js : fichier JavaScript contenant la fonction chargée de créer et configurer la carte Leaflet.
+- **index.html** : page principale contenant l’intégration de Leaflet et l’appel à la fonction loadLeafletMap().
+- **style.css** : fichier de styles personnalisé (dimensions de la carte, mise en page, etc.).
+- **mespetitesfonctions.js** : fichier JavaScript contenant la fonction chargée de créer et configurer la carte Leaflet.
 
 ## Fonctionnement
   ### 1. Chargement de Leaflet
