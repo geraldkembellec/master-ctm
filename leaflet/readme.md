@@ -14,7 +14,7 @@ L’objectif est d’afficher une carte centrée sur la localisation d’une fac
 - mespetitesfonctions.js : fichier JavaScript contenant la fonction chargée de créer et configurer la carte Leaflet.
 
 ## Fonctionnement
-  1. Chargement de Leaflet
+  ### 1. Chargement de Leaflet
     Le fichier HTML inclut :
       - la feuille de style Leaflet
       - la bibliothèque JavaScript Leaflet
@@ -24,12 +24,11 @@ L’objectif est d’afficher une carte centrée sur la localisation d’une fac
 
   Cela permet d’utiliser directement les composants et fonctions fournis par Leaflet.
 
-  2. Chargement des styles et scripts personnalisés
-    Le projet ajoute :
+  ### 2. Chargement des styles et scripts personnalisés
+     
+    Le fichier HTML charge :
       - style.css pour ajuster l’apparence de la carte
       - mespetitesfonctions.js pour contenir la logique métier, notamment la fonction loadLeafletMap()
         
-    `
     <link rel="stylesheet" href="style.css">
     <script src="mespetitesfonctions.js"></script>
-    `
