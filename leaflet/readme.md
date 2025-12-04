@@ -4,15 +4,12 @@ L’objectif est d’afficher une carte centrée sur la localisation d’une fac
 
 ## Structure du projet
 
-`
+  ``` sh
   .
-  
   ├── index.html
-  
   ├── style.css
-  
   └── mespetitesfonctions.js
-`
+  ```
 
 - index.html : page principale contenant l’intégration de Leaflet et l’appel à la fonction loadLeafletMap().
 - style.css : fichier de styles personnalisé (dimensions de la carte, mise en page, etc.).
@@ -20,13 +17,12 @@ L’objectif est d’afficher une carte centrée sur la localisation d’une fac
 
 ## Fonctionnement
   ### 1. Chargement de Leaflet
-  Le fichier HTML inclut :
   
-    - la feuille de style Leaflet
-    - la bibliothèque JavaScript Leaflet
-
-      
-      ```html  
+  Le fichier HTML inclut :
+  - la feuille de style Leaflet
+  - la bibliothèque JavaScript Leaflet
+    
+      ```html
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
       <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
       ```
@@ -34,9 +30,13 @@ L’objectif est d’afficher une carte centrée sur la localisation d’une fac
 
   ### 2. Chargement des styles et scripts personnalisés
      
-    Le fichier HTML charge :
-      - style.css pour ajuster l’apparence de la carte
-      - mespetitesfonctions.js pour contenir la logique métier, notamment la fonction loadLeafletMap()
-        
-    <link rel="stylesheet" href="style.css">
-    <script src="mespetitesfonctions.js"></script>
+  Le fichier HTML charge :
+  - style.css
+      pour ajuster l’apparence de la carte
+  - mespetitesfonctions.js
+    pour contenir la logique métier, notamment la fonction loadLeafletMap()
+    
+      ```html
+      <link rel="stylesheet" href="style.css">
+      <script src="mespetitesfonctions.js"></script>
+      ```
