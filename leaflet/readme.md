@@ -6,8 +6,11 @@ L’objectif est d’afficher une carte centrée sur la localisation d’une fac
 
 `
   .
+  
   ├── index.html
+  
   ├── style.css
+  
   └── mespetitesfonctions.js
 `
 
