@@ -25,10 +25,10 @@ L’objectif est d’afficher une carte centrée sur la localisation d’une fac
   Cela permet d’utiliser directement les composants et fonctions fournis par Leaflet.
 
   2. Chargement des styles et scripts personnalisés
-
     Le projet ajoute :
       - style.css pour ajuster l’apparence de la carte
       - mespetitesfonctions.js pour contenir la logique métier, notamment la fonction loadLeafletMap()
+        
     `
     <link rel="stylesheet" href="style.css">
     <script src="mespetitesfonctions.js"></script>
