@@ -27,7 +27,7 @@ On créé la base ...
       `dateN` date DEFAULT NULL,
       `dateM` date DEFAULT NULL,
       `ISNI` varchar(16) COLLATE utf8mb3_unicode_ci DEFAULT NULL,
-      `idWikidata` varchar(8) COLLATE utf8mb3_unicode_ci DEFAULT NULL
+      `idWikidata` varchar(32) COLLATE utf8mb3_unicode_ci DEFAULT NULL
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
     
     --
@@ -51,8 +51,14 @@ Puis on importe les données du fichier CSV GoogleSheet (attention, il ne faut p
 
 ![Import du fichier](images/import-donnees1.png "Import du fichier")
 
-... avec quelques options à paramétrer
+... avec quelques options à paramétrer :
+-  de pas cocher "Activer la vérification des clés étrangères" (il n'y en a pas ici).
+-  continuer à charger en cas d'erreurs
 
 ![Import du fichier options](images/import-donnees2.png "Import du fichier options")
 
+ça doit donner ça : les lignes du fichier CSV sont transormées en SQL et executées.
+
+![Import du fichier resultat SQL](images/import-donnees3.png "Import du fichier resultat SQL")
 Pour rappel, sur votre machine le répertoire des fichers HTML et PHP est C:\MAMP\htdocs sur windows et Applications/MAMP/htdocs)
+
