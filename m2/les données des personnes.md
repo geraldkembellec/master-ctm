@@ -63,6 +63,6 @@ Puis on importe les données du fichier CSV GoogleSheet (attention, il ne faut p
 
 ... et la table Personnes de la base de données GLAM est peuplée
 
-![Table peuplée](images/itable-peuplee.png "Table peuplée")
+![Table peuplée](images/table-peuplee.png "Table peuplée")
 
 Pour rappel, sur votre machine le répertoire des fichers HTML et PHP est C:\MAMP\htdocs sur windows et Applications/MAMP/htdocs)
