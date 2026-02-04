@@ -49,6 +49,6 @@ On créé la base ...
 
 Puis on importe les données du fichier CSV GoogleSheet :
 
-![Import du fichier](images/import-donnees1.png"Import du fichier")
+![Import du fichier](images/import-donnees1.png "Import du fichier")
 
 Pour rappel, sur votre machine le répertoire des fichers HTML et PHP est C:\MAMP\htdocs sur windows et Applications/MAMP/htdocs)
