@@ -5,6 +5,7 @@ Les données travaillées de manière collaboratives via Gsheet puis enrichies a
 
 Elles sont prêtes à étre intégrées dans une base MySQL une fois intallé MAMP, via PHPmyAdmin : Voici le code SQL, également disponible [en fichier](https://github.com/geraldkembellec/master-ctm/blob/main/m2/Cre%CC%81erLaTablePersonnes.sql) la structure de la table. Il faut l'intégrer dans la base 'GLAM', **encodée en unicode utf8 case insensitive**, que vous allez créer via phpMyADMIN sur votre machine après avoir démarré MAMP.
 On créé la base ...
+
 ![Creation de la base](images/creation-base.png "Creation de la base")
 
 ... avec ce code SQL :
@@ -43,9 +44,11 @@ On créé la base ...
     COMMIT;
     
   ```
+
 ![Creation de la table](images/creation-table.png "Creation de la table")
 
 Puis on importe les données du fichier CSV GoogleSheet :
+
 ![Import du fichier](images/import-donnees1.png"Import du fichier")
 
 Pour rappel, sur votre machine le répertoire des fichers HTML et PHP est C:\MAMP\htdocs sur windows et Applications/MAMP/htdocs)
