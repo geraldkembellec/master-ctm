@@ -1,4 +1,4 @@
-Les données travaillées de manière collaboratives via Gsheet puis enrichies avec OpenRefine sont ici :  https://docs.google.com/spreadsheets/d/e/2PACX-1vTm50gmXyXgIYkU9uRxy8y9BhNTzLq8cH9VrODf-UQRK-BUnEJNDiStTHv-_IC13lrxRwUgummQHBQN/pub?gid=221157170&single=true&output=csv
+Les données travaillées de manière collaboratives via Gsheet puis enrichies avec OpenRefine sont ici :  [https://docs.google.com/spreadsheets/d/e/2PACX-1vTm50gmXyXgIYkU9uRxy8y9BhNTzLq8cH9VrODf-UQRK-BUnEJNDiStTHv-_IC13lrxRwUgummQHBQN/pub?gid=221157170&single=true&output=csv](https://docs.google.com/spreadsheets/d/e/2PACX-1vTm50gmXyXgIYkU9uRxy8y9BhNTzLq8cH9VrODf-UQRK-BUnEJNDiStTHv-_IC13lrxRwUgummQHBQN/pub?gid=221157170&single=true&output=csv)
 
 Elles sont prêtes à étre intégrées dans une base MySQL une fois intallé MAMP, via PHPmyAdmin : Voici le code SQLla structure de la table  (à intégrer dans la base 'GLAM', **encodée en unicode utf8 case insensitive**, que vous allez créer via phpMyADMIN sur votre machine après avoir démarré MAMP):
 
