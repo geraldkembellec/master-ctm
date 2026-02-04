@@ -9,6 +9,7 @@ L’exercice vise à évaluer la capacité à articuler des compétences techniq
 – Générer du HTML5 sémantiquement structuré à l’aide des microdonnées schema.org.
 – Rendre les données à la fois lisibles par les humains et interprétables par les machines (OSDS).
 – Formaliser une démarche réflexive dans un court reporting méthodologique.
+
 ## Contexte et scénario
 
 Vous êtes chargé.e.s de produire une page culturelle web (exposition, œuvre, artiste, événement, lieu patrimonial, collection, etc.) destinée à un site de médiation numérique.
@@ -73,7 +74,7 @@ Le corpus doit comporter au minimum 10 entités culturelles et inclure des champ
     – Microdonnées exploitables par OSDS (capture d'écran dans le reporting)
     
 #### Mini reporting (≈ 3 pages)
-    Le document doit expliciter clairement :
+Le document doit expliciter clairement :
     – Le choix du corpus et des sources
     – Le travail réalisé dans OpenRefine (nettoyage, normalisation, choix structuraux)
     – Le modèle de données retenu
