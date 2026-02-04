@@ -25,7 +25,7 @@ CREATE TABLE `Personnes` (
   `dateN` date DEFAULT NULL,
   `dateM` date DEFAULT NULL,
   `ISNI` varchar(16) COLLATE utf8mb3_unicode_ci DEFAULT NULL,
-  `idWikidata` varchar(8) COLLATE utf8mb3_unicode_ci DEFAULT NULL
+  `idWikidata` varchar(32) COLLATE utf8mb3_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 --
