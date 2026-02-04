@@ -60,5 +60,9 @@ Puis on importe les données du fichier CSV GoogleSheet (attention, il ne faut p
 ça doit donner ça : les lignes du fichier CSV sont transormées en SQL et executées.
 
 ![Import du fichier resultat SQL](images/import-donnees3.png "Import du fichier resultat SQL")
-Pour rappel, sur votre machine le répertoire des fichers HTML et PHP est C:\MAMP\htdocs sur windows et Applications/MAMP/htdocs)
 
+... et la table Personnes de la base de données GLAM est peuplée
+
+![Table peuplée](images/itable-peuplee.png "Table peuplée")
+
+Pour rappel, sur votre machine le répertoire des fichers HTML et PHP est C:\MAMP\htdocs sur windows et Applications/MAMP/htdocs)
