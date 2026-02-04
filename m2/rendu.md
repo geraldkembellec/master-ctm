@@ -28,36 +28,35 @@ Le corpus doit comporter au minimum 10 entités culturelles et inclure des champ
 
 ## Chaîne de traitement attendue
 
-    ### Collecte et préparation des données
+### Collecte et préparation des données
     – Collecte depuis une source ouverte ou semi-ouverte (CSV, API, site institutionnel).
     – Nettoyage, normalisation, homogénéisation avec OpenRefine.
     – Alignement si pertinent (lieux, types, personnes).
     – Export final vers un format exploitable pour l’import en base de données.
 
-   ### Modélisation et base de données
+### Modélisation et base de données
     – Conception d’une base MySQL (1 table).
     – Définition explicite des champs et types.
     – Import des données nettoyées.
 
-    ### Chargement des données en PHP
+### Chargement des données en PHP
     – Connexion à la base via MySQLi.
     – Requête SQL de sélection.
     – Chargement des résultats dans une structure PHP.
     – Parcours des données avec une boucle foreach.
 
-    ### Génération d’une page HTML5 sémantique
+### Génération d’une page HTML5 sémantique
     – Génération dynamique du HTML5 à partir des données.
     – Utilisation des microdonnées schema.org adaptées au type d’objet choisi
     (ex. Event, CreativeWork, Place, Person, ExhibitionEvent, etc.).
     – Respect d’une structure HTML5 valide et lisible.
     – Mise en forme minimale (lisibilité, hiérarchie visuelle).
 
-    ### Accessibilité machine
+### Accessibilité machine
     – Vérification de l’interoprétabilité des microdonnées à l’aide du plugin OSDS.
     – Cohérence entre structure documentaire, HTML et sémantique.
 
-    ### Contraintes techniques obligatoires
-
+### Contraintes techniques obligatoires
     – HTML5 valide --> vue l'année dernière
     – PHP --> pas de panique vous aurez un gabarit ;) 
     – MySQLi --> connecteur de base de données
@@ -66,14 +65,14 @@ Le corpus doit comporter au minimum 10 entités culturelles et inclure des champ
     – Données issues d’OpenRefine
     – Page unique (une seule page HTML/PHP)
 
-    ### Livrables attendus
+### Livrables attendus
 
-    #### La page web fonctionnelle
+#### La page web fonctionnelle
     – Fichier .php opérationnel
     – Base de données fonctionnelle (exportée en SQL)
     – Microdonnées exploitables par OSDS (capture d'écran dans le reporting)
     
-    #### Mini reporting (≈ 3 pages)
+#### Mini reporting (≈ 3 pages)
     Le document doit expliciter clairement :
     – Le choix du corpus et des sources
     – Le travail réalisé dans OpenRefine (nettoyage, normalisation, choix structuraux)
