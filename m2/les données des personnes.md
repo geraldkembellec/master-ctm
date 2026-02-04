@@ -47,8 +47,11 @@ On créé la base ...
 
 ![Creation de la table](images/creation-table.png "Creation de la table")
 
-Puis on importe les données du fichier CSV GoogleSheet :
+Puis on importe les données du fichier CSV GoogleSheet (attention, il ne faut pas importer la ligne 1, il s'agit des en entêtes, c-a-d du nom des colonnes) :
 
 ![Import du fichier](images/import-donnees1.png "Import du fichier")
 
 Pour rappel, sur votre machine le répertoire des fichers HTML et PHP est C:\MAMP\htdocs sur windows et Applications/MAMP/htdocs)
+
+![Import du fichier options](images/import-donnees2.png "Import du fichier options")
+
