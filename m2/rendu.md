@@ -1,13 +1,11 @@
-Intitulé de l’exercice
-
-Production et publication d’une page HTML5 culturelle sémantiquement enrichie à partir de données structurées
-Objectifs pédagogiques
+# Production et publication d’une page HTML5 culturelle sémantiquement enrichie à partir de données structurées
+## Objectifs pédagogiques
 
 L’exercice vise à évaluer la capacité à articuler des compétences techniques et documentaires dans une logique de publication web orientée données. Il s’agit de :
 
 – Mettre en œuvre une chaîne de traitement de données culturelles (collecte, nettoyage, structuration).
 – Concevoir une base de données relationnelle simple adaptée à un corpus culturel.
-– Interroger une base MySQL via PHP (MySQLi) et produire un affichage dynamique.
+– Interroger une base **MySQL** via **PHP** (*MySQLi*) et produire un *affichage dynamique*.
 – Générer du HTML5 sémantiquement structuré à l’aide des microdonnées schema.org.
 – Rendre les données à la fois lisibles par les humains et interprétables par les machines (OSDS).
 – Formaliser une démarche réflexive dans un court reporting méthodologique.
