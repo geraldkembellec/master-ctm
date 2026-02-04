@@ -42,3 +42,4 @@ Pour rappel, sur votre machine le répertoire des fichers HTML et PHP est C:\MAM
     COMMIT;
     
   ```
+![Creation de la table](images/creation-table.png "Creation de la table")
