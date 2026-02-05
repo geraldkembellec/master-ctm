@@ -1,0 +1,91 @@
+/* ======================================================
+   FEUILLE DE STYLE PÉDAGOGIQUE
+   Objectif : rendre visibles les choix de structuration
+   sémantique (schema.org / Person) sans modifier le HTML
+   ====================================================== */
+
+/* 1. Cadre général : neutralité et lisibilité */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #222;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* 2. Fiche = unité documentaire */
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 1.8rem 2.2rem;
+  border: 1px solid #ddd;
+}
+
+/* 3. Titre éditorial (hors microdonnées) */
+h1 {
+  font-size: 1.35rem;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* ======================================================
+   STYLES LIÉS AUX PROPRIÉTÉS SÉMANTIQUES
+   (lecture humaine + repérage pédagogique)
+   ====================================================== */
+
+/* Nom de la personne (itemprop="name")
+   → entité principale décrite */
+[itemprop="name"] {
+  font-weight: bold;
+  color: #000;
+  background-color: #e3f2fd; /* bleu clair */
+  padding: 0.1rem 0.3rem;
+}
+
+/* Rôle / fonction sociale */
+[itemprop="jobTitle"] {
+  font-style: italic;
+  color: #37474f;
+}
+
+/* Date (normalisée via datetime)
+   → illustration du principe FAIR */
+time[itemprop="birthDate"] {
+  background-color: #f1f8e9; /* vert très clair */
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+/* Lieu = entité imbriquée (Person → Place)
+   → notion de graphe */
+[itemprop="birthPlace"] {
+  text-decoration: underline;
+  cursor: help;
+}
+
+/* ======================================================
+   SOURCE ET RÉFÉRENCES
+   ====================================================== */
+
+a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ======================================================
+   ÉLÉMENTS NON VISIBLES MAIS SÉMANTIQUES
+   ====================================================== */
+
+/* L’image est masquée visuellement mais reste exploitable
+   par les agents (moteurs, IA, agrégateurs) */
+img[itemprop="image"] {
+  display: none;
+}
