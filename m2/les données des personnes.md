@@ -22,7 +22,7 @@ On créé la base ...
       `métier` varchar(32) COLLATE utf8mb3_unicode_ci DEFAULT NULL,
       `LieuN` varchar(32) COLLATE utf8mb3_unicode_ci DEFAULT NULL,
       `LieuM` varchar(32) COLLATE utf8mb3_unicode_ci DEFAULT NULL,
-      `Picture` varchar(64) COLLATE utf8mb3_unicode_ci DEFAULT NULL,
+      `Picture` varchar(256) COLLATE utf8mb3_unicode_ci DEFAULT NULL,
       `Info` tinytext COLLATE utf8mb3_unicode_ci,
       `dateN` date DEFAULT NULL,
       `dateM` date DEFAULT NULL,
