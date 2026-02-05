@@ -52,8 +52,9 @@ if ($result) {
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Personnes inspirantes – M1 CTM</title>
+        <meta charset="UTF-8">
+        <title>Personnes inspirantes – M1 CTM</title>
+        <link rel="stylesheet" href="../css/Person.css">
 </head>
 <body>
 <h1>Personnes inspirantes</h1>
