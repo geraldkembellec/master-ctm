@@ -1,5 +1,5 @@
 <?php
-$qui="les M1 CTM";
+$qui="les M2 CTM";
 ?>
 <html>
 	<head></head>
