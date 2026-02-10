@@ -24,6 +24,8 @@ Chaque groupe de 2-3 choisit un type d’objet culturel, par exemple :
     – Artistes contemporains ou personnes inspirantes (qui sont dans wikidata)
     – Festivals culturels
     – Lieux patrimoniaux
+    
+[On le rentre ici](https://docs.google.com/spreadsheets/d/1I4MMTF8bj8vpIXDoIl89XO3SE9rNjvOX2rfE6jlp2D8/edit?usp=sharing)
 
 Le corpus doit comporter au minimum 10 entités culturelles et inclure des champs documentaires structurants (titre, description, date, lieu, auteur, URL, etc.).
 
