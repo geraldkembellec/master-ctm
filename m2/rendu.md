@@ -2,6 +2,7 @@
 ## Objectifs pédagogiques
 
 **Date de rendu** : vendredi 17 Avril
+
 L’exercice vise à évaluer la capacité à articuler des compétences techniques et documentaires dans une logique de publication web orientée données ouvertes liées (LOD). Il s’agit de :
 
 – Mettre en œuvre une chaîne de traitement de données culturelles (collecte, nettoyage, structuration).
