@@ -61,6 +61,8 @@ Puis on importe les données du fichier CSV GoogleSheet (attention, il ne faut p
 
 ![Import du fichier resultat SQL](images/import-donnees3.png "Import du fichier resultat SQL")
 
+Pour information la page sémantisée de Greta Thunberg est publiée ici : [https://geraldkembellec.github.io/master-ctm/m2/html-semantique/greta-thunberg-microdonnees.html](https://geraldkembellec.github.io/master-ctm/m2/html-semantique/greta-thunberg-microdonnees.html)
+
 ... et la table Personnes de la base de données GLAM est peuplée
 
 ![Table peuplée](images/table-peuplee.png "Table peuplée")
