@@ -1,1 +1,101 @@
+<?php
+/* connexion a la base "GLAM", sur la machine "localhost", user "root", password "root" */
+$mysqli = new mysqli("localhost", "root", "root", "GLAM");
+if ($mysqli->connect_error) {
+    die("Erreur de connexion");
+}
 
+function wikimediaImageUrl(?string $filename): ?string
+{
+    if (empty($filename)) {
+        return null;
+    }
+    $filename = str_replace(' ', '_', $filename);
+    $encodedFilename = rawurlencode($filename);
+    $hash = md5($filename);
+
+    return "https://upload.wikimedia.org/wikipedia/commons/"
+         . substr($hash, 0, 1) . "/"
+         . substr($hash, 0, 2) . "/"
+         . $encodedFilename;
+}
+
+$result = $mysqli->query("SELECT * FROM visual_artwork");
+$artworks = [];
+while ($row = $result->fetch_assoc()) {
+    $artworks[] = $row;
+}
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Œuvres visuelles</title>
+</head>
+<body>
+
+<h1>Œuvres visuelles</h1>
+<!-- Boucle de toutes les oeuvres d'art-->
+<?php foreach ($artworks as $artwork): ?>
+<!-- Chaque oeuvre d'art est présentée sous forme d'article -->
+<article itemscope 
+         itemtype="https://schema.org/VisualArtwork"
+         itemid="https://www.wikidata.org/wiki/
+         <?= htmlspecialchars($artwork['id_wikidata']) ?>
+">
+<!-- S'il existe une image... -->
+<?php if ($img = wikimediaImageUrl($artwork['image_filename'])): ?>
+<!-- ... on l'affiche -->
+<img src="<?= htmlspecialchars($img) ?>" 
+     alt="<?= htmlspecialchars($artwork['title']) ?>" 
+     width="80%" itemprop="image">
+<?php endif; ?>
+<h2 itemprop="name">
+    <?= htmlspecialchars($artwork['title']) ?>
+</h2>
+<p itemprop="description">
+    <?= htmlspecialchars($artwork['description']) ?>
+</p>
+<p itemprop="creator">
+    <strong>Auteur :</strong>
+    <p itemscope itemtype="https://schema.org/Person" >
+        <span itemprop="Name">
+            <?= htmlspecialchars($artwork['creator']) ?>
+        </span>
+    </p>
+</p>
+<p>
+    <strong>Date de création :</strong>
+    <span itemprop="dateCreated">
+        <?= htmlspecialchars($artwork['creation_date']) ?>
+    </span>
+</p>
+<p>
+    <strong>Médium :</strong>
+    <span itemprop="artMedium">
+        <?= htmlspecialchars($artwork['art_medium']) ?>
+    </span>
+</p>
+
+<p>
+    <strong>Type d’œuvre :</strong>
+    <span itemprop="artform">
+    <?= htmlspecialchars($artwork['artform']) ?>
+</span>
+</p>
+
+<p>
+    <strong>Lieu de conservation :</strong>
+    <span itemprop="locationCreated">
+        <?= htmlspecialchars($artwork['location']) ?>
+    </span>
+</p>
+
+<a href="https://www.wikidata.org/wiki/
+    <?= htmlspecialchars($artwork['id_wikidata']) ?>
+" >Référence Wikidata</a>
+</article>
+<hr>
+<?php endforeach; ?>
+</body>
+</html>
