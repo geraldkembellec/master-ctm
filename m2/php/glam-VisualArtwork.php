@@ -4,7 +4,7 @@ $mysqli = new mysqli("localhost", "root", "root", "GLAM");
 if ($mysqli->connect_error) {
     die("Erreur de connexion");
 }
-
+/* fonction qui "calcule" l'URL d'une image Wikidata a partire de son nom */
 function wikimediaImageUrl(?string $filename): ?string
 {
     if (empty($filename)) {
@@ -20,7 +20,9 @@ function wikimediaImageUrl(?string $filename): ?string
          . $encodedFilename;
 }
 
+/* Requete SQL envoyée */
 $result = $mysqli->query("SELECT * FROM visual_artwork");
+/* création d'une liste d'oeuvre d'arts */
 $artworks = [];
 while ($row = $result->fetch_assoc()) {
     $artworks[] = $row;
@@ -50,12 +52,15 @@ while ($row = $result->fetch_assoc()) {
      alt="<?= htmlspecialchars($artwork['title']) ?>" 
      width="80%" itemprop="image">
 <?php endif; ?>
+<!-- affiche le nom -->
 <h2 itemprop="name">
     <?= htmlspecialchars($artwork['title']) ?>
 </h2>
+<!-- affiche la description -->
 <p itemprop="description">
     <?= htmlspecialchars($artwork['description']) ?>
 </p>
+<!-- affiche le nom de l'auteur / artiste -->
 <p itemprop="creator">
     <strong>Auteur :</strong>
     <p itemscope itemtype="https://schema.org/Person" >
@@ -64,33 +69,35 @@ while ($row = $result->fetch_assoc()) {
         </span>
     </p>
 </p>
+<!-- affiche la date de l'oeuvre -->
 <p>
     <strong>Date de création :</strong>
     <span itemprop="dateCreated">
         <?= htmlspecialchars($artwork['creation_date']) ?>
     </span>
 </p>
+<!-- affiche le support de l'oeuvre -->
 <p>
     <strong>Médium :</strong>
     <span itemprop="artMedium">
         <?= htmlspecialchars($artwork['art_medium']) ?>
     </span>
 </p>
-
+<!-- affiche le type d'art -->
 <p>
     <strong>Type d’œuvre :</strong>
     <span itemprop="artform">
     <?= htmlspecialchars($artwork['artform']) ?>
 </span>
 </p>
-
+<!-- affiche le lieu d'expo / de conservation -->
 <p>
     <strong>Lieu de conservation :</strong>
     <span itemprop="locationCreated">
         <?= htmlspecialchars($artwork['location']) ?>
     </span>
 </p>
-
+<!-- affiche le lien Wikidata -->
 <a href="https://www.wikidata.org/wiki/
     <?= htmlspecialchars($artwork['id_wikidata']) ?>
 " >Référence Wikidata</a>
