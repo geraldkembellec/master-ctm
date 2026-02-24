@@ -64,7 +64,7 @@ time[itemprop="birthDate"] {
    → notion de graphe */
 [itemprop="birthPlace"] {
   text-decoration: underline;
-  cursor: help;
+  cursor: url(https://geraldkembellec.github.io/master-ctm/m2/images/place.cur),auto;
 }
 
 /* ======================================================
