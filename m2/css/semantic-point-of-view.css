@@ -1,0 +1,116 @@
+/* =========================
+   1. VISIBILITÉ ONTOLOGIQUE
+   ========================= */
+
+/* AgreeAction = cadre structurant */
+[itemtype*="AgreeAction"] {
+  border-left: 6px solid #2E7D32;
+  background: rgba(46,125,50,0.06);
+  padding: 1rem;
+  margin: 1rem 0;
+  position: relative;
+}
+
+/* Flèche d’agentivité */
+[itemtype*="AgreeAction"]::before {
+  content: "AGREE →";
+  position: absolute;
+  left: -6px;
+  top: -0.8rem;
+  font-size: 0.7rem;
+  background: #2E7D32;
+  color: white;
+  padding: 2px 6px;
+  letter-spacing: 0.08em;
+}
+
+/* =========================
+   2. AGENT
+   ========================= */
+
+[itemprop="agent"][itemscope] {
+  color: #1F3A5F;
+  font-weight: 600;
+  border-bottom: 2px solid #1F3A5F;
+}
+
+/* ORCID identifié */
+[itemprop="agent"][itemid*="orcid"]::after {
+  content: " (ORCID)";
+  font-size: 0.75rem;
+  color: #555;
+}
+
+/* =========================
+   3. OBJET DU DÉSACCORD / ACCORD
+   ========================= */
+
+cite[itemtype*="CreativeWork"] {
+  background: rgba(0,0,0,0.04);
+  padding: 0.2rem 0.4rem;
+  font-style: normal;
+  border-radius: 4px;
+}
+
+/* Auteur du CreativeWork */
+cite [itemtype*="Person"] {
+  color: #1565C0;
+  font-weight: 500;
+}
+
+/* Autorité ISNI */
+cite [itemid*="isni"]::after {
+  content: " (ISNI)";
+  font-size: 0.75rem;
+  color: #777;
+}
+
+/* =========================
+   4. HOMONYMIE / DISSOCIATION
+   ========================= */
+
+[itemtype*="Person"]:not([itemprop="agent"]) {
+  border-bottom: 1px dashed #B71C1C;
+}
+
+/* Indique une identité distincte */
+[itemtype*="Person"]:not([itemprop="agent"])::before {
+  content: "≠ ";
+  color: #B71C1C;
+  font-weight: bold;
+}
+
+/* =========================
+   5. STRUCTURE DOCUMENTAIRE
+   ========================= */
+
+details {
+  margin-top: 1.5rem;
+  border-top: 1px solid #ccc;
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* =========================
+   6. MODE ANALYTIQUE (OPTIONNEL)
+   ========================= */
+
+/* Affiche temporairement les microdonnées cachées */
+
+body.debug [itemprop]::after {
+  content: " [" attr(itemprop) "]";
+  font-size: 0.65rem;
+  color: #999;
+}
+
+body.debug [itemtype]::after {
+  content: " {" attr(itemtype) "}";
+  font-size: 0.6rem;
+  color: #bbb;
+}
