@@ -4,7 +4,7 @@
 **Date de rendu** : 
 [vendredi 17 Avril 2026](https://calendar.app.google/WZ67wkLEauk7yiKUA 'importer dans l'agenda')
 
-L’exercice vise à évaluer la capacité à articuler des compétences techniques et documentaires dans une logique de publication web orientée données ouvertes liées ([LOD](https://fr.wikipedia.org/wiki/Linked_open_data)). Il s’agit de :
+L’exercice vise à évaluer la capacité à articuler des compétences techniques et documentaires dans une logique de publication web orientée données ouvertes liées ( [LOD](https://fr.wikipedia.org/wiki/Linked_open_data) ). Il s’agit de :
 
     – Mettre en œuvre une chaîne de traitement de données culturelles (collecte, nettoyage, structuration).
     – Concevoir une base de données relationnelle *simple* adaptée à un corpus culturel.
