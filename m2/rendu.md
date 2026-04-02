@@ -62,7 +62,7 @@ Le corpus doit comporter au minimum 10 entités culturelles et inclure des champ
 
 ### Contraintes techniques obligatoires
 * HTML5 valide --> vue l'année dernière
-* PHP --> pas de panique vous aurez un gabarit ;) 
+* PHP --> pas de panique vous aurez un [gabarit](https://github.com/geraldkembellec/master-ctm/tree/main/m2/php) ;) 
 * MySQLi --> connecteur de base de données
 * Boucle foreach pour l’affichage
 * Microdonnées schema.org ou JSON-LD
