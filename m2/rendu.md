@@ -89,13 +89,13 @@ Le document doit expliciter clairement :
 
 ### Points de vigilance :
 
-– Qualité documentaire et cohérence du corpus
-– Pertinence de la modélisation des données
-– Fonctionnalité du chargement PHP / MySQL
-– Qualité et justesse des microdonnées schema.org
-– Lisibilité humaine de la page
-– Interprétabilité machine (OSDS)
-– Clarté, rigueur et réflexivité du reporting
+    – Qualité documentaire et cohérence du corpus
+    – Pertinence de la modélisation des données
+    – Fonctionnalité du chargement PHP / MySQL
+    – Qualité et justesse des microdonnées schema.org
+    – Lisibilité humaine de la page
+    – Interprétabilité machine (OSDS)
+    – Clarté, rigueur et réflexivité du reporting
 
 Documentation numérique, structuration de l’information, web sémantique, humanités numériques, publication orientée données, médiation culturelle numérique
 
