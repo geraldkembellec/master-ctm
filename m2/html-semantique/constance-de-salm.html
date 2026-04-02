@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="../css/Person.css">
 </head>
 <body>
+	<main>
     <!-- L'œuvre : La correspondance considérée comme un corpus produit [3] -->
-    <article itemscope itemtype="https://schema.org/CreativeWork">
+    <article itemscope itemtype="https://schema.org/CreativeWorkSeries">
         <h1 itemprop="name">La correspondance de Constance de Salm</h1>
         <!-- Identité de l'auteur réconciliée avec Wikidata [4] -->
         <p>Auteur
@@ -29,22 +30,26 @@
                 </a>
             </span>
         </p>
-
         <!-- Source primaire : Le dataset sur Zenodo -->
         <p>Base de données (Source) : 
             <a itemprop="isBasedOn" itemscope itemtype="https://schema.org/Dataset" 
 			   href="https://zenodo.org/records/5707822">
                 <span itemprop="name">Dataset Zenodo - Correspondance de Constance de Salm</span>
             </a>
-        </p>
-
+        </p
+        <!-- Référence scientifique avec DOI -->
+                <p>Référence : 
+                    <span itemprop="citation" itemscope itemtype="https://schema.org/ScholarlyArticle">
+                        <span itemprop="name">Fairification et mise à jour de la base de données “La correspondance de Constance de Salm (1767-1845)”</span>, 
+                        <a itemprop="url" href="https://doi.org/10.58079/nkzj">doi:10.58079/nkzj</a> (22 novembre 2021).
+                    </span>
+                </p>
         <!-- Étendue temporelle formalisée en intervalle [5], [6] -->
-        <div itemprop="temporalCoverage" itemscope itemtype="https://schema.org/Event">
+        <div itemprop="temporalCoverage" datetime="1785/1845"> 
             <h2>Étendue temporelle de l'activité épistolaire</h2>
             <time>Intervalle stabilisé : 
                 <span itemprop="startDate">1785</span> / <span itemprop="endDate">1845</span>.
 			</time>
-
             <!-- AgreeAction : La validation scientifique comme opération de stabilisation [7], [8] -->
             <div itemprop="potentialAction" itemscope itemtype="https://schema.org/AgreeAction">
                 <p>Action de "Fairification" et validation par : 
@@ -54,16 +59,10 @@
                         </a>
                     </span>
                 </p>
-                
-                <!-- Référence scientifique avec DOI -->
-                <p>Référence : 
-                    <span itemprop="citation" itemscope itemtype="https://schema.org/ScholarlyArticle">
-                        <span itemprop="name">Fairification et mise à jour de la base de données “La correspondance de Constance de Salm (1767-1845)”</span>, 
-                        <a itemprop="url" href="https://doi.org/10.58079/nkzj">doi:10.58079/nkzj</a> (22 novembre 2021).
-                    </span>
-                </p>
+           
             </div>
         </div>
     </article>
+	</main>
 </body>
 </html>
