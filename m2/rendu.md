@@ -9,21 +9,22 @@ L’exercice vise à évaluer la capacité à articuler des compétences techniq
     – Concevoir une base de données relationnelle *simple* adaptée à un corpus culturel.
     – Interroger une base **MySQL** via **PHP** (*MySQLi*) et produire un *affichage dynamique*.
     – Générer du **HTML5 sémantiquement structuré** à l’aide des microdonnées [schema.org](https://schema.org/) (depuis des exemples).
-    – Rendre les données à la fois lisibles par les humains et interprétables par les machines (avec le plugin OSDS pour tester).
+    – Rendre les données à la fois lisibles par les humains et interprétables par les machines (avec le [plugin OSDS](https://osds.openlinksw.com/ 'Installer le plugin') pour tester).
     – Formaliser une démarche réflexive dans un court reporting méthodologique.
 
 ## Contexte et scénario
 
 Vous êtes chargé.e.s de produire une page culturelle web (exposition, œuvre, artiste, événement, lieu patrimonial, collection, etc.) destinée à un site de médiation numérique.
 
-Les contenus affichés ne sont pas codés “en dur” : ils proviennent d’une base de données alimentée à partir d’un jeu de données structuré et normalisé avec OpenRefine.
-Corpus de données
+Les contenus affichés ne sont pas codés “en dur” : ils proviennent d’une base de données alimentée à partir d’un jeu de données structuré et normalisé avec [OpenRefine](https://openrefine.org/).
+
+### Corpus de données
 
 Chaque groupe de 2-3 choisit un type d’objet culturel, par exemple :
 
     – Œuvres d’un musée
     – Expositions temporaires
-    – Artistes contemporains ou personnes inspirantes (qui sont dans wikidata)
+    – Artistes contemporains ou personnes inspirantes (qui sont dans [Wikidata](https://www.wikidata.org/))
     – Festivals culturels
     – Lieux patrimoniaux
     ...
@@ -46,16 +47,16 @@ Le corpus doit comporter au minimum 10 entités culturelles et inclure des champ
     – Import des données nettoyées.
 
 ### Chargement des données en PHP
-    – Connexion à la base via MySQLi.
+    – Connexion à la base via [MySQLi](https://www.php.net/manual/fr/book.mysqli.php).
     – Requête SQL de sélection.
     – Chargement des résultats dans une structure PHP.
-    – Parcours des données avec une boucle foreach.
+    – Parcours des données avec une boucle [foreach](https://www.php.net/manual/fr/control-structures.foreach.php).
 
 ### Génération d’une page HTML5 sémantique
-    – Génération dynamique du HTML5 à partir des données.
+    – Génération dynamique du [HTML5](https://ronan-hello.fr/series/html/balises-semantiques-html) à partir des données.
     – Utilisation des microdonnées schema.org adaptées au type d’objet choisi
-    (ex. Event, CreativeWork, Place, Person, ExhibitionEvent, etc.).
-    – Respect d’une structure HTML5 valide et lisible.
+    (ex. [Event](https://schema.org/Event), [CreativeWork](https://schema.org/CreativeWork), [Place](](https://schema.org/Place), [Person](https://schema.org/Person), [ExhibitionEvent]((https://schema.org/ExhibitionEvent), etc.).
+    – Respect d’une structure [HTML5 valide](https://validator.w3.org/detailed.html) et lisible.
     – Mise en forme minimale (lisibilité, hiérarchie visuelle).
 
 ### Accessibilité machine
@@ -88,7 +89,6 @@ Le document doit expliciter clairement :
     – Les limites du dispositif et pistes d’amélioration
 
 ### Points de vigilance :
-
     – Qualité documentaire et cohérence du corpus
     – Pertinence de la modélisation des données
     – Fonctionnalité du chargement PHP / MySQL
@@ -100,4 +100,5 @@ Le document doit expliciter clairement :
 Documentation numérique, structuration de l’information, web sémantique, humanités numériques, publication orientée données, médiation culturelle numérique
 
 ## Livrable : 
-Une archive avec l'export de la base de données en SQL, fichier php (HTML), reporting
+Une archive avec l'export de la base de données en SQL, fichier php (HTML), reporting.
+Il faut déposer le projet dans une archive sur votre GitHub de groupe
