@@ -20,7 +20,6 @@ Les contenus affichés ne sont pas codés “en dur” : ils proviennent d’une
 ### Corpus de données
 
 Chaque groupe de 2-3 choisit un type d’objet culturel, par exemple :
-
     – Œuvres d’un musée
     – Expositions temporaires
     – Artistes contemporains ou personnes inspirantes (qui sont dans [Wikidata](https://www.wikidata.org/))
