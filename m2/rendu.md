@@ -34,15 +34,15 @@ Le corpus doit comporter au minimum 10 entités culturelles et inclure des champ
 ## Chaîne de traitement attendue
 
 ### Collecte et préparation des données
-    – Collecte depuis une source ouverte ou semi-ouverte (CSV, API, site institutionnel).
-    – Nettoyage, normalisation, homogénéisation avec OpenRefine.
-    – Alignement si pertinent (lieux, types, personnes).
-    – Export final vers un format exploitable pour l’import en base de données.
+* Collecte depuis une source ouverte ou semi-ouverte (CSV, API, site institutionnel).
+* Nettoyage, normalisation, homogénéisation avec OpenRefine.
+* Alignement si pertinent (lieux, types, personnes).
+* Export final vers un format exploitable pour l’import en base de données.
 
 ### Modélisation et base de données
-    – Conception d’une base MySQL (1 table).
-    – Définition explicite des champs et types.
-    – Import des données nettoyées.
+* Conception d’une base MySQL (1 table).
+* Définition explicite des champs et types.
+* Import des données nettoyées.
 
 ### Chargement des données en PHP
 * Connexion à la base via [MySQLi](https://www.php.net/manual/fr/book.mysqli.php).
@@ -57,24 +57,24 @@ Le corpus doit comporter au minimum 10 entités culturelles et inclure des champ
 * Mise en forme minimale (lisibilité, hiérarchie visuelle).
 
 ### Accessibilité machine
-    – Vérification de l’interoprétabilité des microdonnées à l’aide du plugin OSDS.
-    – Cohérence entre structure documentaire, HTML et sémantique.
+* Vérification de l’interoprétabilité des microdonnées à l’aide du plugin OSDS.
+* Cohérence entre structure documentaire, HTML et sémantique.
 
 ### Contraintes techniques obligatoires
-    – HTML5 valide --> vue l'année dernière
-    – PHP --> pas de panique vous aurez un gabarit ;) 
-    – MySQLi --> connecteur de base de données
-    – Boucle foreach pour l’affichage
-    – Microdonnées schema.org ou JSON-LD
-    – Données issues d’OpenRefine
-    – Page unique (une seule page HTML/PHP)
+* HTML5 valide --> vue l'année dernière
+* PHP --> pas de panique vous aurez un gabarit ;) 
+* MySQLi --> connecteur de base de données
+* Boucle foreach pour l’affichage
+* Microdonnées schema.org ou JSON-LD
+* Données issues d’OpenRefine
+* Page unique (une seule page HTML/PHP)
 
 ### Livrables attendus
 
 #### La page web fonctionnelle
-    – Fichier .php opérationnel
-    – Base de données fonctionnelle (exportée en SQL)
-    – Microdonnées exploitables par OSDS (capture d'écran dans le reporting)
+* Fichier .php opérationnel
+* Base de données fonctionnelle (exportée en SQL)
+* Microdonnées exploitables par OSDS (capture d'écran dans le reporting)
     
 #### Mini reporting (≈ 3 pages)
 Le document doit expliciter clairement :
