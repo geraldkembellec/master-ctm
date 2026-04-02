@@ -6,7 +6,7 @@
 L’exercice vise à évaluer la capacité à articuler des compétences techniques et documentaires dans une logique de publication web orientée données ouvertes liées ([LOD](https://fr.wikipedia.org/wiki/Linked_open_data)). Il s’agit de :
 – Mettre en œuvre une chaîne de traitement de données culturelles (collecte, nettoyage, structuration).
 – Concevoir une base de données relationnelle *simple* adaptée à un corpus culturel.
-– Interroger une base **MySQL** via **PHP** (*MySQLi*) et produire un *affichage dynamique*.
+– Interroger une base __MySQL__ via **PHP** (*MySQLi*) et produire un *affichage dynamique*.
 – Générer du **HTML5 sémantiquement structuré** à l’aide des microdonnées [schema.org](https://schema.org/) (depuis des exemples).
 – Rendre les données à la fois lisibles par les humains et interprétables par les machines (avec le [plugin OSDS](https://osds.openlinksw.com/ "Installer le plugin") pour tester).
 – Formaliser une démarche réflexive dans un court reporting méthodologique.
@@ -100,4 +100,4 @@ Documentation numérique, structuration de l’information, web sémantique, hum
 
 ## Livrable : 
 Une archive avec l'export de la base de données en SQL, fichier php (HTML), reporting.
-Il faut déposer le projet dans une archive sur votre GitHub de groupe
+Il faut déposer le projet dans une archive sur votre [GitHub](https://github.com/) de groupe
