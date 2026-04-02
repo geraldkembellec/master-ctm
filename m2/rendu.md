@@ -45,17 +45,16 @@ Le corpus doit comporter au minimum 10 entités culturelles et inclure des champ
     – Import des données nettoyées.
 
 ### Chargement des données en PHP
-    – Connexion à la base via [MySQLi](https://www.php.net/manual/fr/book.mysqli.php).
-    – Requête SQL de sélection.
-    – Chargement des résultats dans une structure PHP.
-    – Parcours des données avec une boucle [foreach](https://www.php.net/manual/fr/control-structures.foreach.php).
+* Connexion à la base via [MySQLi](https://www.php.net/manual/fr/book.mysqli.php).
+* Requête SQL de sélection.
+* Chargement des résultats dans une structure PHP.
+* Parcours des données avec une boucle [foreach](https://www.php.net/manual/fr/control-structures.foreach.php).
 
 ### Génération d’une page HTML5 sémantique
-    – Génération dynamique du [HTML5](https://ronan-hello.fr/series/html/balises-semantiques-html) à partir des données.
-    – Utilisation des microdonnées schema.org adaptées au type d’objet choisi
-    (ex. [Event](https://schema.org/Event), [CreativeWork](https://schema.org/CreativeWork), [Place](](https://schema.org/Place), [Person](https://schema.org/Person), [ExhibitionEvent]((https://schema.org/ExhibitionEvent), etc.).
-    – Respect d’une structure [HTML5 valide](https://validator.w3.org/detailed.html) et lisible.
-    – Mise en forme minimale (lisibilité, hiérarchie visuelle).
+* Génération dynamique du [HTML5](https://ronan-hello.fr/series/html/balises-semantiques-html) à partir des données.
+* Utilisation des microdonnées schema.org adaptées au type d’objet choisi (ex. [Event](https://schema.org/Event), [CreativeWork](https://schema.org/CreativeWork), [Place](](https://schema.org/Place), [Person](https://schema.org/Person), [ExhibitionEvent]((https://schema.org/ExhibitionEvent), etc.).
+* Respect d’une structure [HTML5 valide](https://validator.w3.org/detailed.html) et lisible.
+* Mise en forme minimale (lisibilité, hiérarchie visuelle).
 
 ### Accessibilité machine
     – Vérification de l’interoprétabilité des microdonnées à l’aide du plugin OSDS.
