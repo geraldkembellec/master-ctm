@@ -78,21 +78,21 @@ Le corpus doit comporter au minimum 10 entités culturelles et inclure des champ
     
 #### Mini reporting (≈ 3 pages)
 Le document doit expliciter clairement :
-    – Le choix du corpus et des sources
-    – Le travail réalisé dans OpenRefine (nettoyage, normalisation, choix structuraux)
-    – Le modèle de données retenu
-    – Les choix schema.org effectués
-    – Les difficultés rencontrées (techniques, documentaires, sémantiques)
-    – Les limites du dispositif et pistes d’amélioration
+* Le choix du corpus et des sources
+* Le travail réalisé dans OpenRefine (nettoyage, normalisation, choix structuraux)
+* Le modèle de données retenu
+* Les choix schema.org effectués
+* Les difficultés rencontrées (techniques, documentaires, sémantiques)
+* Les limites du dispositif et pistes d’amélioration
 
 ### Points de vigilance :
-    – Qualité documentaire et cohérence du corpus
-    – Pertinence de la modélisation des données
-    – Fonctionnalité du chargement PHP / MySQL
-    – Qualité et justesse des microdonnées schema.org
-    – Lisibilité humaine de la page
-    – Interprétabilité machine (OSDS)
-    – Clarté, rigueur et réflexivité du reporting
+* Qualité documentaire et cohérence du corpus
+* Pertinence de la modélisation des données
+* Fonctionnalité du chargement PHP / MySQL
+* Qualité et justesse des microdonnées schema.org
+* Lisibilité humaine de la page
+* Interprétabilité machine (OSDS)
+* Clarté, rigueur et réflexivité du reporting
 
 Documentation numérique, structuration de l’information, web sémantique, humanités numériques, publication orientée données, médiation culturelle numérique
 
