@@ -4,7 +4,7 @@ $mysqli = new mysqli("localhost", "root", "root", "GLAM");
 if ($mysqli->connect_error) {
     die("Erreur de connexion");
 }
-/* fonction qui "calcule" l'URL d'une image Wikidata a partire de son nom */
+/* fonction qui "calcule" l'URL d'une image Wikidata a partir de son nom */
 function wikimediaImageUrl(?string $filename): ?string
 {
     if (empty($filename)) {
