@@ -1,13 +1,13 @@
 <?php
-/* chemin vers le fichier CSV */
+/* File PATH /cchemin vers le fichier CSV */
 $csvFile = "visual_artwork.csv";
 
-/* vérification existence fichier */
+/* does it exist / vérification existence fichier */
 if (!file_exists($csvFile)) {
     die("Fichier CSV introuvable");
 }
 
-/* fonction qui calcule l'URL d'une image Wikimedia Commons */
+/* img url building function / fonction qui calcule l'URL d'une image Wikimedia Commons */
 function wikimediaImageUrl(?string $filename): ?string
 {
     if (empty($filename)) {
@@ -22,7 +22,7 @@ function wikimediaImageUrl(?string $filename): ?string
         . $encodedFilename;
 }
 
-/* lecture du CSV */
+/* lecture du CSV / CSV reading*/
 $artworks = [];
 if (($handle = fopen($csvFile, "r")) !== false) {
     /* récupération des noms de colonnes (séparateur ;) */
