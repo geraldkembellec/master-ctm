@@ -1,6 +1,6 @@
-# Projet « document numérique »
+# Projet « document numérique / Création de site Web »
 Répertoire du cours
-[http://r.cnam.fr/master-ctm](https://github.com/geraldkembellec/master-ctm/edit/main/m1/)
+[[http://r.cnam.fr/master-ctm](https://github.com/geraldkembellec/master-ctm/edit/main/m1/)](https://github.com/geraldkembellec/master-ctm/edit/main/m1/)
 
 Remplissez le [tableau des projets](https://docs.google.com/spreadsheets/d/1eAzUMoJeSKAtY46ZLGnGEqYGGprk71wezgasWEFQSsU/edit?gid=0#gid=0 "Les projets")  avant fin septembre.
 
@@ -16,7 +16,7 @@ Le pied de page doit aussi présenter les [mentions légales](https://www.legalp
 Votre document sera vérifié avec le validateur HTML 5 du W3C et optionnellement par le testeur de sémantique de Google code. Il est impératif que les citations se fassent avec des guillemets françaises - cela peut être traité dans les feuilles de style. Vous pouvez créer votre propre feuille de style ou en exploitant une préexistante pour l’adapter. Votre Web documentaire doit intégrer à minima un visuel documenté et légendé, ainsi qu’une vidéo ou la lecture d’un fichier audio.  Pour la correction, je prendrai en compte la manière dont sont documentés sémantiquement vos contenus. L’aspect artistique du site Web sera traité en points complémentaires.
 ## Les rendus sont :  
 1.	Une archive du site et de toute sa structure ;
-2.	Un compte rendu  – ou reporting – de quelques pages (entre 20 et 30) exposant votre stratégie de présentation des données ainsi que celle des métadonnées ;
+2.	Un compte rendu  – ou reporting – de quelques pages (entre 20 et 30) exposant votre stratégie de présentation des données ainsi que celle des métadonnées qui valide le 2ème cours ;
 3.	La présentation par groupe d’un diaporama présentant votre projet, vos choix techniques, la réalisation et les difficultés rencontrées pendant 10 -15 minutes.
 ## Calendrier :
 - Rendu du site Web [X décembre 2026 (23h59)](https://calendar.app.google/bDfRejncsWdAPUNb8: rendu de l’archive (ou du site en ligne) et du compte-rendu.
