@@ -1,6 +1,6 @@
 # Projet « document numérique »
 Répertoire du cours
-http://r.cnam.fr/master-ctm 
+[http://r.cnam.fr/master-ctm](https://github.com/geraldkembellec/master-ctm/edit/main/m1/)
 
 Remplissez le [tableau des projets](https://docs.google.com/spreadsheets/d/1eAzUMoJeSKAtY46ZLGnGEqYGGprk71wezgasWEFQSsU/edit?gid=0#gid=0 "Les projets")  avant fin septembre.
 
@@ -19,5 +19,5 @@ Votre document sera vérifié avec le validateur HTML 5 du W3C et optionnellemen
 2.	Un compte rendu  – ou reporting – de quelques pages (entre 20 et 30) exposant votre stratégie de présentation des données ainsi que celle des métadonnées ;
 3.	La présentation par groupe d’un diaporama présentant votre projet, vos choix techniques, la réalisation et les difficultés rencontrées pendant 10 -15 minutes.
 ## Calendrier :
-- ~~5 décembre 2025 (23h59)~~ Rendu du site Web [14 décembre 2025 (23h59)](https://calendar.app.google/bDfRejncsWdAPUNb8: rendu de l’archive (ou du site en ligne) et du compte-rendu.
-- ~~10 décembre 2025~~ [17 décembre 2025 (10h - 17h) : soutenance, présentation diaporamas des projets ](https://calendar.app.google/srS7MczHAV5GLP266 "17 décembre 2025 (10h - 17h) : soutenance, présentation diaporamas des projets ")devant les camarades de promotion.
+- Rendu du site Web [X décembre 2026 (23h59)](https://calendar.app.google/bDfRejncsWdAPUNb8: rendu de l’archive (ou du site en ligne) et du compte-rendu.
+- [X décembre 2026 (10h - 17h) : soutenance, présentation diaporamas des projets ](https://calendar.app.google/ "X décembre 2026 (10h - 17h) : soutenance, présentation diaporamas des projets ")devant les camarades de promotion.
