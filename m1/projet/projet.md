@@ -1,9 +1,9 @@
 # Projet « document numérique / Création de site Web »
 Répertoire du cours
-[[http://r.cnam.fr/master-ctm](https://github.com/geraldkembellec/master-ctm/edit/main/m1/)](https://github.com/geraldkembellec/master-ctm/edit/main/m1/)
+[https://github.com/geraldkembellec/master-ctm/edit/main/m1/](https://github.com/geraldkembellec/master-ctm/edit/main/m1/)](https://github.com/geraldkembellec/master-ctm/edit/main/m1/)
 
-Remplissez le [tableau des projets](https://docs.google.com/spreadsheets/d/1eAzUMoJeSKAtY46ZLGnGEqYGGprk71wezgasWEFQSsU/edit?gid=0#gid=0 "Les projets")  avant fin septembre.
-
+Remplissez le [tableau des projets](https://docs.google.com/spreadsheets/d/1eAzUMoJeSKAtY46ZLGnGEqYGGprk71wezgasWEFQSsU/edit?gid=0#gid=0 "Les projets") avant fin septembre.
+≠
 ## Synopsis
 Vous devez réaliser un Web documentaire, un article, ou une synthèse documentaire illustrée sur le sujet de votre choix par groupe de deux (trois tolérés). Cette année, je propose également un cas « réel », à voir en direct avec moi : une artiste contemporaine : Yaku. Votre production doit être réalisée en HTML5 encodé en utf-8, sous la forme d’un article (au sens HTML 5) décomposé en paragraphes et comporter plusieurs parties. 
 
