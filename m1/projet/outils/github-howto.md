@@ -26,7 +26,7 @@ Regarder le site, l’adresse ressemble à : https://ton-nom-utilisateur.github.
 
 Cliquer sur l’URL donnée par GitHub pour le site 
 
-## Editer le site
+## Éditer le site
 
 Pour modifier la page, ouvrir index.html dans le dépôt, cliquer sur l’icône en forme de crayon, changer le texte, puis *Commit changes.*
 
@@ -34,6 +34,10 @@ Les changements apparaissent sur le site après l’enregistrement.
 
 Astuce : pour que l’adresse soit juste https://ton-nom-utilisateur.github.io/
 
-Appeller le dépôt nom-utilisateur.github.io (exactement).
+Appeler le dépôt nom-utilisateur.github.io (exactement).
 
 Mettre l'index.html dedans. GitHub le publiera comme site « utilisateur » sans le /mon-site/.
+
+## Documenter
+
+Pour documenter votre projet, créez un fichier **markdown** avec l'extension .md : ([mode d'emploi](https://docs.framasoft.org/fr/grav/markdown.html)).
