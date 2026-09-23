@@ -1,6 +1,6 @@
 # GitHub Pages
 
-
+![GitHub-Logo.wine.png](Logo)
 Créer un compte [GitHub](https://github.com/ "GitHub"), puis se connecter.
 ##  Créer un dépot
   1. Cliquer sur le bouton + en haut à droite →* New repository* (nouveau dépôt).
