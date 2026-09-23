@@ -34,7 +34,7 @@ Pour modifier la page, ouvrir index.html dans le dépôt, cliquer sur l’icône
 
 Les changements apparaissent sur le site après l’enregistrement.
 
-Astuce : pour que l’adresse soit juste https://ton-nom-utilisateur.github.io/
+<u>Astuce :</u> pour que l’adresse soit juste https://ton-nom-utilisateur.github.io/
 
 Appeler le dépôt nom-utilisateur.github.io (exactement).
 
