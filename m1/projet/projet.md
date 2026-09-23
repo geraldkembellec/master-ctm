@@ -1,6 +1,6 @@
 # Projet « document numérique / Création de site Web »
 Répertoire du cours
-[https://github.com/geraldkembellec/master-ctm/edit/main/m1/](https://github.com/geraldkembellec/master-ctm/edit/main/m1/)](https://github.com/geraldkembellec/master-ctm/edit/main/m1/)
+[https://github.com/geraldkembellec/master-ctm/edit/main/m1/](https://github.com/geraldkembellec/master-ctm/edit/main/m1/)
 
 Remplissez le [tableau des projets](https://docs.google.com/spreadsheets/d/1eAzUMoJeSKAtY46ZLGnGEqYGGprk71wezgasWEFQSsU/edit?gid=0#gid=0 "Les projets") avant fin septembre.
 ≠
