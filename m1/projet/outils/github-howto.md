@@ -1,5 +1,6 @@
 # GitHub Pages
 
+
 Créer un compte [GitHub](https://github.com/ "GitHub"), puis se connecter.
 ##  Créer un dépot
   1. Cliquer sur le bouton + en haut à droite →* New repository* (nouveau dépôt).
@@ -40,4 +41,4 @@ Mettre l'index.html dedans. GitHub le publiera comme site « utilisateur » sans
 
 ## Documenter
 
-Pour documenter votre projet, créez un fichier **markdown** avec l'extension .md : ([mode d'emploi](https://docs.framasoft.org/fr/grav/markdown.html)).
+Pour documenter votre projet, créez un fichier _markdown_ avec l'extension .md : ([mode d'emploi](https://docs.framasoft.org/fr/grav/markdown.html)).
