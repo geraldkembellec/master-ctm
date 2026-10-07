@@ -19,5 +19,5 @@ Votre document sera vérifié avec le [validateur HTML 5 du W3C](https://validat
 2.	Un compte rendu  – ou reporting – de quelques dizaines de pages (entre 20 et 30) exposant votre stratégie de présentation des données ainsi que celle des métadonnées qui valide le 2ème cours (de l'après midi) ;
 3.	La présentation par groupe d’un diaporama présentant votre projet, vos choix techniques, la réalisation et les difficultés rencontrées pendant 10-15 minutes.
 ## Calendrier :
-- Rendu du site Web [Vendre 4 décembre 2026 (23h59)]([https://calendar.app.google/bDfRejncsWdAPUNb8](https://calendar.app.google/wGGXskGD3ou3UZvE7): rendu de l’archive (ou du site en ligne sur GitHub) et du compte-rendu (*reporting*).
-- [Mercredi 16 décembre 2026 (10h - 17h) : soutenance, présentation diaporamas des projets ]([https://calendar.app.google/](https://calendar.app.google/5ztoNBL6cnmFUCxT6) "16 décembre 2026 (10h - 17h) : soutenance, présentation diaporamas des projets ") devant les camarades de promotion.
+- Rendu du site Web [Vendredi 4 décembre 2026 (23h59)](calendar.app.google/wGGXskGD3ou3UZvE7): rendu de l’archive (ou du site en ligne sur GitHub) et du compte-rendu (*reporting*).
+- [Mercredi 16 décembre 2026 (10h - 17h) : soutenance, présentation diaporamas des projets ](https://calendar.app.google/5ztoNBL6cnmFUCxT6) "16 décembre 2026 (10h - 17h) : soutenance, présentation diaporamas des projets ") devant les camarades de promotion.
