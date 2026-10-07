@@ -2,7 +2,7 @@
 
 Créer un compte [GitHub](https://github.com/ "GitHub"), puis se connecter.
 ##  Créer un dépot
-Cliquer sur le bouton + en haut à droite →* New repository* (nouveau dépôt).
+Cliquer sur le bouton + en haut à droite → *New repository* (nouveau dépôt).
 
 Donner un nom, par exemple mon-site.
 
