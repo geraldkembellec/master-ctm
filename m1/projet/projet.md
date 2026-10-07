@@ -20,4 +20,4 @@ Votre document sera vérifié avec le [validateur HTML 5 du W3C](https://validat
 3.	La présentation par groupe d’un diaporama présentant votre projet, vos choix techniques, la réalisation et les difficultés rencontrées pendant 10-15 minutes.
 ## Calendrier :
 - Rendu du site Web [Vendredi 4 décembre 2026 (23h59)](calendar.app.google/wGGXskGD3ou3UZvE7): rendu de l’archive (ou du site en ligne sur GitHub) et du compte-rendu (*reporting*).
-- [Mercredi 16 décembre 2026 (10h - 17h) : soutenance, présentation diaporamas des projets ](https://calendar.app.google/5ztoNBL6cnmFUCxT6) "16 décembre 2026 (10h - 17h) : soutenance, présentation diaporamas des projets ") devant les camarades de promotion.
+- [Mercredi 16 décembre 2026 (10h - 17h) : soutenance, présentation diaporamas des projets ](https://calendar.app.google/5ztoNBL6cnmFUCxT6 "soutenance, présentation diaporamas des projets") devant les camarades de promotion.
