@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  font-size: 24px;
+}
+#map {
+  height: 600px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+#message {
+  margin: 10px 0;
+}
