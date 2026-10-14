@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte des lieux</title>
+    <!-- Feuille de style Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        #map {
+            height: 600px;
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+        #message {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Carte interactive des lieux Parisens</h1>
+    <p>
+        Les marqueurs sont générés automatiquement
+        à partir du fichier CSV.
+    </p>
+    <div id="message">Chargement des données...</div>
+    <div id="map"></div>
+    <!-- Bibliothèque Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Bibliothèque Papa Parse pour lire le CSV -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script>
+        // 1. Initialisation de la carte
+        const map = L.map('map');
+        // 2. Ajout du fond cartographique OpenStreetMap
+        L.tileLayer(
+            'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+            {
+                maxZoom: 19,
+                attribution:
+                    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }
+        ).addTo(map);
+        // 3. Création d'un groupe de marqueurs
+        const markers = L.featureGroup().addTo(map);
+        // 4. Lecture du fichier CSV
+        Papa.parse('points.csv', {
+            download: true,
+            header: true,
+            skipEmptyLines: true,
+            complete: function(results) {
+                let nombrePoints = 0;
+                // 5. Parcours de chaque ligne du CSV
+                results.data.forEach(function(ligne) {
+                    // Extraction des coordonnées
+                    const latitude = Number(ligne.latitude);
+                    const longitude = Number(ligne.longitude);
 
+                    // Vérification des coordonnées
+                    if (
+                        !Number.isFinite(latitude) ||
+                        !Number.isFinite(longitude) ||
+                        latitude < -90 ||
+                        latitude > 90 ||
+                        longitude < -180 ||
+                        longitude > 180 ||
+                        ligne.nom.trim() === ''
+                    ) {
+                        console.warn(
+                            'Ligne ignorée : coordonnées ou nom invalides',
+                            ligne
+                        );
+                        return;
+                    }
+
+                    // 6. Création du marqueur
+                    const marker = L.marker([
+                        latitude,
+                        longitude
+                    ]);
+
+                    // 7. Création de la fenêtre contextuelle
+                    const contenuPopup = `
+                        <strong>${escapeHTML(ligne.nom)}</strong><br>
+                        Ville : ${escapeHTML(ligne.ville)}<br>
+                        ${escapeHTML(ligne.description)}
+                    `;
+                    marker.bindPopup(contenuPopup);
+                    // 8. Ajout du marqueur à la carte
+                    marker.addTo(markers);
+                    nombrePoints++;
+                });
+                // 9. Ajustement automatique du cadrage
+                if (nombrePoints > 0) {
+                    map.fitBounds(markers.getBounds(), {
+                        padding: [30, 30],
+                        maxZoom: 15
+                    });
+                    document.getElementById('message').textContent =
+                        nombrePoints + ' point(s) affiché(s).';
+                } else {
+                    map.setView([46.6, 2.5], 6);
+                    document.getElementById('message').textContent =
+                        'Aucun point valide à afficher.';
+                }
+                if (results.errors.length > 0) {
+                    console.warn(
+                        'Erreurs de lecture du CSV :',
+                        results.errors
+                    );
+                }
+            },
+            error: function(error) {
+                document.getElementById('message').textContent =
+                    'Impossible de charger points.csv. Vérifiez le serveur et le chemin du fichier.';
+                console.error(error);
+            }
+        });
+        // Échappement HTML des données du CSV
+        function escapeHTML(value) {
+            return String(value ?? '').replace(/[&<>"']/g, function(caractere) {
+                const correspondances = {
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    '"': '&quot;',
+                    "'": '&#39;'
+                };
+                return correspondances[caractere];
+            });
+        }
+    </script>
+</body>
+</html>
