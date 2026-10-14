@@ -6,24 +6,12 @@
     <title>Carte des lieux</title>
     <!-- Feuille de style Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 24px;
-        }
-        #map {
-            height: 600px;
-            width: 100%;
-            border: 1px solid #ccc;
-        }
-        #message {
-            margin: 10px 0;
-        }
-    </style>
+    <!-- Bibliothèque Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Bibliothèque Papa Parse pour lire le CSV -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="gestion-leaflet.js"></script>
+    
 </head>
 <body>
     <h1>Carte interactive des lieux Parisens</h1>
@@ -33,10 +21,7 @@
     </p>
     <div id="message">Chargement des données...</div>
     <div id="map"></div>
-    <!-- Bibliothèque Leaflet -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <!-- Bibliothèque Papa Parse pour lire le CSV -->
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    
     <script>
         // 1. Initialisation de la carte
         const map = L.map('map');
