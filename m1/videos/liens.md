@@ -1,1 +1,1 @@
-
+<iframe src="https://cnam-my.sharepoint.com/personal/gerald_kembellec_lecnam_net/_layouts/15/embed.aspx?UniqueId=45b09067-0b8b-4589-b4eb-fc674457d366&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="COURS CTM - Gérald Kembellec-20261014_102755-Enregistrement de la réunion.mp4"></iframe>
