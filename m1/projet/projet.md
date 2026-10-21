@@ -26,3 +26,15 @@ Votre document sera vérifié avec le [validateur HTML 5 du W3C](https://validat
 
 ## Le reporting
 Le reporting projet est un un document formel qui vous sert à démontrer votre compréhension et le traitement du projet.
+Vous devez adopter une posture d’ingénierie réflexive.
+
+__Cela implique__ :
+    - Analyser en profondeur votre cahier des charges fonctionnel ;
+    - Sélectionner des techniques pertinentes pour y répondre ;
+    - Montrer le travail d'équipe : [qui fait quoi, selon quel planning](https://www.canva.com/fr_fr/tableau-blanc/diagramme-de-gantt/ 'Diagramme de Gannt par exemple') ? ;
+    - Mobiliser des technologies adaptées ;
+    - Justifier vos arbitrages ;
+    - documenter vos choix ;
+    - démontrer la cohérence globale de votre solution.
+
+Votre réponse technique doit être argumentée et reproductible.
