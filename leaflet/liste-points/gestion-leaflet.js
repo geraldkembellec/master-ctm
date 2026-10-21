@@ -52,7 +52,7 @@
                         <strong>${escapeHTML(ligne.nom)}</strong><br>
                         Ville : ${escapeHTML(ligne.ville)}<br>
                         ${escapeHTML(ligne.description)}
-                        <img="${ligne.img}">
+                        <img="${ligne.image}">
                     `;
                     marker.bindPopup(contenuPopup);
     // 8. Ajout du marqueur à la carte
