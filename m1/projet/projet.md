@@ -5,9 +5,7 @@ Répertoire du cours
 Remplissez le [tableau des projets](https://docs.google.com/spreadsheets/d/1eAzUMoJeSKAtY46ZLGnGEqYGGprk71wezgasWEFQSsU/edit?gid=0#gid=0 "Listes des projets") avant fin septembre.
 
 ## Synopsis
-Vous devez réaliser un Web documentaire, un article, ou une synthèse documentaire illustrée sur le sujet de votre choix par groupe de deux (trois tolérés). 
-
-Cette année, je propose également un cas « réel », à voir en direct avec moi : une artiste contemporaine : Yaku. 
+Vous devez réaliser un Web documentaire, un sote web, un article, ou une synthèse documentaire illustrée sur le sujet de votre choix par groupe de deux (trois tolérés). 
 
 Votre production doit être réalisée en [HTML5](https://www.w3.org/TR/html5/ "Doc officielle du HTML5 sur le W3C") encodé en utf-8, sous la forme d’un article (au sens HTML 5) décomposé en paragraphes et comporter plusieurs parties. 
 
@@ -25,3 +23,4 @@ Votre document sera vérifié avec le [validateur HTML 5 du W3C](https://validat
 ## Calendrier :
 - Rendu du site Web [Vendredi 4 décembre 2026 (23h59)](calendar.app.google/wGGXskGD3ou3UZvE7): rendu de l’archive (ou du site en ligne sur GitHub) et du compte-rendu (*reporting*).
 - [Mercredi 16 décembre 2026 (10h - 17h) : soutenance, présentation diaporamas des projets ](https://calendar.app.google/5ztoNBL6cnmFUCxT6 "soutenance, présentation diaporamas des projets") devant les camarades de promotion.
+
