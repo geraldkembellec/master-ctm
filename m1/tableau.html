@@ -11,8 +11,10 @@
       <section>
         <h2>Tableau minimal</h2>
         <p>Une ligne, une cellule</p>
+        <!-- tr = "table row", ligne de tableau --> 
         <table border="1">
           <tr>
+            <!-- td = "table data", donnée de tableau, une cellule --> 
             <td>Contenu de la cellule</td>
           </tr>
         </table>
@@ -22,6 +24,24 @@
          <p>Tableau de 2x2 : 2 lignes et deux colonnes</p>
          Exemple de tableau de deux lignes et deux colonnes
         <table border="2">
+          <tr>
+            <td>Contenu de la cellule en haut à gauche</td>
+            <td>Contenu de la cellule en haut à droite</td>
+          </tr>
+          <tr>
+            <td>Contenu de la cellule en bas à gauche</td>
+            <td>Contenu de la cellule en bas à droite</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Tableau avec résumé et en-tête</h2>
+        <table summary="exemple de tableau minimal" border="1">
+          <tr>
+            <!-- th = "table heading", en tête de colonne --> 
+            <th>Colonne 1</th>
+            <th>Colonne 2</th>
+          </tr>
           <tr>
             <td>Contenu de la cellule en haut à gauche</td>
             <td>Contenu de la cellule en haut à droite</td>
