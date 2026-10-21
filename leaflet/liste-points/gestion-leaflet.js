@@ -89,8 +89,6 @@
             return String(value ?? '').replace(/[&<>"']/g, function(caractere) {
                 const correspondances = {
                     '&': '&amp;',
-                    '<': '&lt;',
-                    '>': '&gt;',
                     '"': '&quot;',
                     "'": '&#39;'
                 };
