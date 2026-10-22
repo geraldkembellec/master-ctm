@@ -8,5 +8,5 @@
 
 ## 21 oct.
 ### Matin
--- [Partie 1](https://cnam-my.sharepoint.com/:v:/g/personal/gerald_kembellec_lecnam_net/IQCeTuHoXE5fRosV9rvboF1mAUqcdKSGf5YlwxE1oLhNnZM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=RdZeSf)
--- [Parti 2]()
+- [Partie 1](https://cnam-my.sharepoint.com/:v:/g/personal/gerald_kembellec_lecnam_net/IQCeTuHoXE5fRosV9rvboF1mAUqcdKSGf5YlwxE1oLhNnZM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=RdZeSf)
+- [Partie 2](https://cnam-my.sharepoint.com/:v:/g/personal/gerald_kembellec_lecnam_net/IQDqkyUtTCq8SI3xiSQTYAhJATeHnQlC-AtDa2YPTzYQOXI?e=hSSrYH)
