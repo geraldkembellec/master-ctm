@@ -12,7 +12,7 @@
 // 3. Création d'un groupe de marqueurs
         const markers = L.featureGroup().addTo(map);
 // 4. Lecture du fichier CSV
-        Papa.parse('https://tinyurl.com/spots-csv', {
+        Papa.parse('https://docs.google.com/spreadsheets/d/e/2PACX-1vTD8gJcc3DyPdvQABcpBfmhlPA9s6fO8JERz4F1p_Q0LhQ0SGvXtvif7v-RzmuTTdgCb7GszyXxe59b/pub?gid=1867939548&single=true&output=csv', {
             download: true,
             header: true,
             skipEmptyLines: true,
