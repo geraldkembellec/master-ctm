@@ -9,7 +9,7 @@ function loadLeafletMap(){
 		}).addTo(map);
 	 	/* Je personnalise l'épingle avec une image en HTML, un lien et du texte */
 		const marker = L.marker([48.8271, 2.3646]).addTo(map)
-			.bindPopup('<img src="https://upload.wikimedia.org/wikipedia/fr/4/42/CentrePMF_Paris1.jpg" width="100%"><a href="https://www.pantheonsorbonne.fr/"><strong>Université PARIS 1</strong></a><br>Site PMF (Tolbiac).').openPopup();
+			.bindPopup('<img src="https://upload.wikimedia.org/wikipedia/fr/4/42/CentrePMF_Paris1.jpg" width="100%"><a href="https://www.pantheonsorbonne.fr/"><strong>Université PARIS 1</strong></a><br>Site <abbr title="Pierre Mendes France (ancien président du Conseil des ministres de France)">PMF</abbr> (Tolbiac).').openPopup();
 	}
 	function onMapClick(e) {
 		popup
