@@ -1,4 +1,5 @@
 function loadLeafletMap(){
+		/* la variable lien va devenir le lien cliquable du pop-up */
 		const lien = "https://www.pantheonsorbonne.fr/";
 	    /* je centre la carte sur Paris coordonnées 48.8271, 2.3646 avec un zoom 15 */
 		const map = L.map('map').setView([48.8271, 2.3646], 15);
