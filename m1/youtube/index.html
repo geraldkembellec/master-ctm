@@ -8,12 +8,22 @@
     <article>
       <h1>Intéger une vidéo Youtube</h1>
       <section >
-        <h2>Méthode 1 : Balise "Embed"</h2>
+        <h2>Méthode 1 : Balise "embed"</h2>
         <p> \<embed\> 	Defines a container for an external application</p>
-        <embed src="https://www.youtube.com/embed/F9Bo89m2f6g" 
+        <embed src="https://www.youtube.com/embed/uz52vOg7is4" 
                allowfullscreen="true" 
-               alt="Texte alternatif" 
-               width="425" height="344">
+               alt="Ca charge pas" 
+               width="560" height="315">
+      </section>
+      <section>
+      <h2>Méthode 2 : Balise "iframe"</h2>
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/uz52vOg7is4?si=reUgWMYrQqlcNxfo" 
+        title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        Ca charge pas ...
+      </iframe>
       </section>
     </article>
   </body>
