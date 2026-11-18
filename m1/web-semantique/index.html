@@ -2,53 +2,66 @@
 <html lang="fr-FR">
   <head>
     <meta charset="utf-8">
-    <title>Gabarit</title>
+    <title>Recette</title>
   </head>
   <body>
-<article>
-<div itemscope itemtype="https://schema.org/Recipe">
-  <span itemprop="name">Mom's World Famous Banana Bread</span>
-  By <span itemprop="author">John Smith</span>,
-  <meta itemprop="datePublished" content="2009-05-08">May 8, 2009
-  <img itemprop="image" src="bananabread.jpg"
-       alt="Banana bread on a plate" />
-
-  <span itemprop="description">This classic banana bread recipe comes
-  from my mom -- the walnuts add a nice texture and flavor to the banana
-  bread.</span>
-
-  Prep Time: <meta itemprop="prepTime" content="PT15M">15 minutes
-  Cook time: <meta itemprop="cookTime" content="PT1H">1 hour
-  Yield: <span itemprop="recipeYield">1 loaf</span>
-  Tags: <link itemprop="suitableForDiet" href="https://schema.org/LowFatDiet" />Low fat
-
-  <div itemprop="nutrition"
+  <article itemscope itemtype="https://schema.org/Recipe">
+      <h1 itemprop="name">Mon Banana Bread</h1>
+      <p>Par <span itemprop="author">Gérald</span>, le
+      <meta itemprop="datePublished" content="2026-05-08"> 8 mai 2026
+      <img itemprop="image" src="https://www.tables-auberges.com/storage/uploads/2022/04/AdobeStock_258473747-2-1024x683.jpeg"
+       alt="Banana bread sur une planche en ardoise" titre="Visuel de gateau à la banane" />
+      </p
+      <section id="prez">
+      <h2>Présentation</h2>
+      <p itemprop="description">
+        Petit-déjeuner idéal par excellence, le banana bread et un cake healthy typique des États-Unis. 
+        Moelleux, il est réalisé avec des bananes bien mûres et est gourmand et facile à prépare
+      </p>
+      <pre>
+      Temps de préparation : <meta itemprop="prepTime" content="PT15M">15 minutes
+      Cook time: <meta itemprop="cookTime" content="PT1H">1 hour
+      Quantité : <span itemprop="recipeYield" lang="fr_FR">1 Miche de pain</span>
+      Tags: <link itemprop="suitableForDiet" 
+             href="https://schema.org/LowFatDiet" />Peu calorique
+      </pre>
+  </section>
+  <section id="nutrition">
+  <h2> Valeur nutritive :</h2>
+  <p itemprop="nutrition"
     itemscope itemtype="https://schema.org/NutritionInformation">
-    Nutrition facts:
+   
     <span itemprop="calories">240 calories</span>,
-    <span itemprop="fatContent">9 grams</span> fat
-  </div>
-
-  Ingredients:
-  - <span itemprop="recipeIngredient">3 or 4 ripe bananas, smashed</span>
-  - <span itemprop="recipeIngredient" itemscope itemtype="https://schema.org/PropertyValue"><span itemprop="value">1</span> <span itemprop="name">egg</span></span>
-  - <span itemprop="recipeIngredient" itemscope itemtype="https://schema.org/PropertyValue"><span itemprop="value">3/4</span> <meta itemprop="unitCode" content="G21">cup of <span itemprop="name">sugar</span></span>
-  ...
-
-  Instructions:
-  <span itemprop="recipeInstructions">
-  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add
-  the flour last. Pour the mixture into a loaf pan and bake for one hour.
-  </span>
-
-  140 comments:
-  <div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter">
-    <meta itemprop="interactionType" content="https://schema.org/CommentAction" />
-    <meta itemprop="userInteractionCount" content="140" />
-  </div>
-  From Janel, May 5 -- thank you, great recipe!
-  ...
-</div>
+    <span itemprop="fatContent">9 grammes</span> de gras.
+  </p>
+  </section>
+  <section id="ingredients">
+    <h2>Ingredients:</h2>
+    <ul>
+      <li itemprop="recipeIngredient">3 or 4 ripe bananas, smashed</li>
+      <li itemprop="recipeIngredient" itemscope itemtype="https://schema.org/PropertyValue">
+        <span itemprop="value">1</span>
+        <span itemprop="name" lang="fr-FR">oeuf</span>
+    </li>
+    <li itemprop="recipeIngredient" itemscope itemtype="https://schema.org/PropertyValue">
+      <span itemprop="value">3/4</span> 
+      <meta itemprop="unitCode" content="G21">tasse 
+      <span itemprop="name">sucre</span>
+    </li>
+    </ul>
+  </section>
+  <section id="intructions">
+    <h2>Instructions:</h2>
+    <p itemprop="recipeInstructions" lang="en_EN" style="{display : none}">
+      Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add
+      the flour last. Pour the mixture into a loaf pan and bake for one hour.
+    </p>
+    <p itemprop="recipeInstructions" lang="fr_FR">
+      Préchauffez le four à 350 degrés. Mélangez les ingrédients dans un bol. 
+      Ajoutez la farine en dernier. 
+      Versez la préparation dans un moule à pain et faites cuire pendant une heure.
+    </p>
+  </section>
 </article>
 </body>
 </html>
