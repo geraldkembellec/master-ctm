@@ -86,7 +86,7 @@ Ne pas confondre `head` et `header` :
 - `head` contient les métadonnées techniques et documentaires de la page ;
 - `header` appartient au contenu affiché et constitue un en-tête.
 
-Exemple d'organisation :
+### Exemple d'organisation :
 
 ``` html
 <body>
