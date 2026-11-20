@@ -125,7 +125,7 @@ Ne pas confondre `head` et `header` :
 </p>
 ```
 
-La personne lit sur écran une date _naturelle_ ; l'agent logiciel peut exploiter la valeur **normalisée** [selon la norme ISO-8601](https://fr.wikipedia.org/wiki/ISO_8601) de `datetime`.
+La personne lit sur écran une date _naturelle_ ; l'agent logiciel peut exploiter la valeur **normalisée** [selon la norme ISO-8601](https://fr.wikipedia.org/wiki/ISO_8601) de l'attribut `datetime` de la balise `time`.
 
 ### `details` et `summary` : un accordéon natif
 
@@ -136,9 +136,9 @@ La personne lit sur écran une date _naturelle_ ; l'agent logiciel peut exploite
 </details>
 ```
 
-Ce mécanisme produit une interaction simple sans nécessiter de *JavaScript*.
+Ce mécanisme produit une interaction simple en mode accordéon (afficher et cacher) sans nécessiter de *JavaScript*.
 
-### `span` : un conteneur générique
+### La balise `span` : un conteneur générique
 
 `span` est un conteneur en ligne. Il ne qualifie pas à lui seul la
 nature du contenu ; il peut servir de support à une classe, un
@@ -146,6 +146,14 @@ identifiant ou une annotation.
 
 ``` html
 <p>Auteur : <span class="auteur">Gérald Kembellec</span></p>
+```
+
+Les notices bibliographiques produites en HTML par **Zotero** le sont dans des ```<span>``` avec la méthode [COinS](https://en.wikipedia.org/wiki/COinS 'voir sur Wikipédia') de la norme [ANSI/NISO Z39.88](https://www.niso.org/publications/z3988-2004-r2010) .
+
+``` html
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.issn=1045-4438">
+Journal of Applied Aquaculture
+</span> 
 ```
 
 ## 1.4. Les zones de la page et la scénographie de l'information
