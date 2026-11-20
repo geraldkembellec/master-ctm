@@ -59,8 +59,6 @@ Il est possible d'utiliser des balises, sémantiques ou non, pour servir de supp
 |---|---|---|
 | Schéma | `schema.org/Recipe` | Recette de cuisine |   
 
-
-
 | Élément| Propriété ou type | Fonction documentaire habituelle |
 |---|---|---|
 | Titre | `name` | Nom de la recette |
@@ -75,11 +73,9 @@ Il est possible d'utiliser des balises, sémantiques ou non, pour servir de supp
 | Ingrédients | `recipeIngredient` | Liste des ingrédients |
 | Instructions | `recipeInstructions` | Étapes de préparation |
 
-
 Ne pas confondre `head` et `header` :
-
-- `head` contient les métadonnées techniques et documentaires de la page ;
-- `header` appartient au contenu affiché et constitue un en-tête.
+- `head` contient les métadonnées techniques et documentaires de la page (l'en tête invisible à l'écran);
+- `header` appartient au contenu affiché et constitue un en-tête au sein du `body`.
 
 ### Exemple d'organisation :
 
@@ -129,7 +125,7 @@ Ne pas confondre `head` et `header` :
 </p>
 ```
 
-La personne lit sur écran une date _naturelle_ ; l'agent logiciel peut exploiter la valeur **normalisée** de `datetime`.
+La personne lit sur écran une date _naturelle_ ; l'agent logiciel peut exploiter la valeur **normalisée** [selon la norme ISO-8601](https://fr.wikipedia.org/wiki/ISO_8601) de `datetime`.
 
 ### `details` et `summary` : un accordéon natif
 
