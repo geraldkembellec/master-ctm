@@ -7,48 +7,34 @@
 ---------------------------------------------------------
 ## Présentation et objectifs
 
-Cette séance étudie la manière de concevoir une page Web comme un
-document structuré, interprétable par des personnes et par des agents
-logiciels : navigateurs, moteurs de recherche, plateformes de diffusion,
-outils de moissonnage et systèmes fondés sur les grands modèles de
-langage.
+Cette séance étudie la manière de concevoir une page Web comme un document structuré, interprétable par des personnes et par des agents logiciels : navigateurs, moteurs de recherche, plateformes de diffusion, outils de moissonnage et systèmes fondés sur les grands modèles de langage.
 
-Le fil directeur est de **décrire explicitement la nature des contenus,
-leurs propriétés et leurs relations afin d'en faciliter
-l'identification, l'indexation, la circulation et la réutilisation**.
+Le fil directeur est de **décrire explicitement la nature des contenus, leurs propriétés et leurs relations afin d'en faciliter l'identification, l'indexation, la circulation et la réutilisation**.
 
-À l'issue du module, l'étudiant doit pouvoir : 
+### À l'issue du module, l'étudiant doit pouvoir : 
 - distinguer structure HTML, sémantique documentaire et présentation graphique ; 
 - expliquer l'intérêt des données structurées pour l'indexation et le moissonnage ; 
-- distinguer Microdata, RDFa et JSON-LD ; 
+- distinguer *Microdata*, *RDFa* et *JSON-LD* ; 
 - comprendre la logique des types et propriétés de Schema.org ; 
-- annoter une page HTML avec les microdonnées (microdata) ; 
-- préparer les métadonnées documentaires et sociales d'une
-page ; 
+- annoter une page HTML avec les microdonnées (*microdata*) ; 
+- préparer les métadonnées documentaires et sociales d'une page ; 
 - contrôler la qualité HTML et sémantique d'un document ; 
-- raisonner le chargement des ressources multimédias et planifier un
-projet.
+- raisonner le chargement des ressources multimédias et planifier un projet.
 
 # 1. La page Web comme document structuré
 
 ## 1.1. Du contenu à sa description
 
-Une page Web contient des textes, images, dates, personnes, événements
-ou objets. Le lecteur humain déduit souvent leur signification de la
-mise en page et du contexte. Un agent logiciel a besoin d'indices
-explicites pour identifier ce qui est décrit.
+Une page Web contient des textes, images, dates, personnes, événements ou objets. Le lecteur humain déduit souvent leur signification de la mise en page et du contexte. Un agent logiciel a besoin d'indices explicites pour identifier ce qui est décrit.
 
-La structuration sémantique permet de passer d'une succession de
-contenus à une description organisée : 
+La structuration sémantique permet de passer d'une succession de contenus à une description organisée : 
 - **objet** : recette, article, personne, événement, organisation ; 
 - **propriétés** : nom, auteur, date, image, description ; 
 - **relations** : une recette est créée par une personne ; 
 - un événement se déroule à une date et dans un lieu ; 
-- **identifiants** : références qui désignent une entité et permettent de
-la relier à des référentiels externes.
+- **identifiants** : références qui désignent une entité et permettent de la relier à des référentiels externes.
 
-La page est donc à la fois une interface de lecture et un document
-porteur d'une description structurée.
+La page est donc à la fois une _interface de lecture_ et un _document porteur d'une description structurée_.
 
 ## 1.2. Trois niveaux complémentaires
 
@@ -58,16 +44,24 @@ porteur d'une description structurée.
 | Sémantique          | Qualifier les contenus  | `Recipe`, `Person`, `author`, `datePublished` |
 | Présentation        | Définir l'apparence     | CSS, couleurs, marges, typographie            |
 
-Une page peut être soignée graphiquement tout en étant pauvre sémantiquement. Inversement, une structure documentaire bien conçue peut recevoir plusieurs présentations grâce aux feuilles de style.
+Une page peut être soignée graphiquement tout en étant pauvre sémantiquement. Inversement, une structure documentaire bien conçue peut recevoir plusieurs présentations grâce aux feuilles de style (CSS).
 
 ## 1.3. Les éléments HTML sémantiques
 
-  Élément                 Fonction documentaire habituelle
-  ----------------------- 
+### Balises et schémas
 
-| Partie | Propriété ou type | Information |
-|---|---|---|
+Il est possible d'utiliser des balises, sémantiques ou non, pour servir de support à des schémas, de [schema.org](schema.org)
+
+#### Par exemple utiliser un `<article>` pour décrire une recette
+
 | Article | `Recipe` | Objet principal |
+|---|---|---|
+| Schéma | `schema.org/Recipe` | Recette de cuisine |   
+
+
+
+| Élément| Propriété ou type | Fonction documentaire habituelle |
+|---|---|---|
 | Titre | `name` | Nom de la recette |
 | Auteur | `author` et `Person` | Personne à l'origine de la recette |
 | Date | `datePublished` | Date de publication |
