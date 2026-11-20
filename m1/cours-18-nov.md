@@ -41,8 +41,8 @@ La page est donc à la fois une _interface de lecture_ et un _document porteur d
 | Niveau              | Fonction                | Exemples                                      |
 |---------------------|-------------------------|-----------------------------------------------|
 | Structure (balises) | Organiser le document   | `header`, `main`, `article`, `section`, `footer`, `time`, `aside` |
-| Sémantique          | Qualifier les contenus  | `Recipe`, `Person`, `author`, `datePublished` |
-| Présentation        | Définir l'apparence     | CSS, couleurs, marges, typographie            |
+| Sémantique (attributs) | Qualifier les contenus  | `Recipe`, `Person`, `author`, `datePublished` |
+| Présentation (style : CSS)       | Définir l'apparence     |  couleurs, marges, typographie            |
 
 Une page peut être soignée graphiquement tout en étant pauvre sémantiquement. Inversement, une structure documentaire bien conçue peut recevoir plusieurs présentations grâce aux feuilles de style (CSS).
 
