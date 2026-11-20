@@ -134,7 +134,7 @@ Exemple d'organisation :
 </p>
 ```
 
-La personne lit sur écran une date naturelle ; l'agent logiciel peut exploiter la valeur normalisée de `datetime`.
+La personne lit sur écran une date _naturelle_ ; l'agent logiciel peut exploiter la valeur **normalisée** de `datetime`.
 
 ### `details` et `summary` : un accordéon natif
 
@@ -145,7 +145,7 @@ La personne lit sur écran une date naturelle ; l'agent logiciel peut exploiter 
 </details>
 ```
 
-Ce mécanisme produit une interaction simple sans nécessiter de JavaScript.
+Ce mécanisme produit une interaction simple sans nécessiter de *JavaScript*.
 
 ### `span` : un conteneur générique
 
@@ -165,10 +165,10 @@ identifiant ou une annotation.
 |  En-tête   |   `<header>`  | Identité du site, titre
 | Navigation |    `<nav>` |   Orientation dans le site, navigation
 | Contenu principal   | `<main>`| Information attendue par le lecteur
-|  Article            | `<article>`| Unité éditoriale autonome
-|  Section            | `<article>` | Sous-ensemble thématique
+| Article             | `<article>`| Unité éditoriale autonome
+| Section             | `<article>` | Sous-ensemble thématique
 | Aside               | `<article>` | Informations contextuelles, encadrés, pub
-| Pied de page        | `<footer>` | Mentions légales, droits, contacts
+| Pied de page        | `<footer>`  | Mentions légales, droits, contacts
 
 `aside` peut accueillir une information contextuelle proche de la *marginalia* : une information placée en marge, qui accompagne le texte principal sans constituer son fil directeur. La position et la visibilité des zones peuvent évoluer selon la feuille de style, tandis que leur rôle documentaire doit rester cohérent.
 
@@ -200,9 +200,9 @@ entités.
 Le cours a rappelé le projet d'un Web dans lequel les informations
 seraient davantage structurées et reliées, dans la continuité des
 travaux associés à Tim Berners-Lee et au W3C. 
-Il a également évoqué XHTML, qui rapprochait les documents HTML des règles de structuration XML. Cette logique demeure présente dans des formats éditoriaux comme EPUB.
+Il a également évoqué XHTML, qui rapprochait les documents HTML des règles de structuration XML. Cette logique demeure présente dans des formats éditoriaux comme EPUB (format des *ebooks* libres).
 
-La séance a distingué deux orientations qui coexistent : 
+Deux orientations coexistent : 
 
 - une tradition documentaire et institutionnelle, attentive à l'interopérabilité, aux référentiels, aux vocabulaires et au partage des connaissances ; 
 - une tradition fortement orientée vers les usages industriels et commerciaux du Web, notamment l'indexation des produits, services et contenus par les grandes plateformes.
@@ -212,10 +212,9 @@ Elle invite à examiner les choix techniques, les usages et les formes de gouver
 
 ## 2.3. Types, propriétés et hiérarchies
 
-Un vocabulaire définit des termes utilisables pour décrire des
-ressources. Un schéma organise ces termes en types et propriétés.
+Un vocabulaire définit des termes utilisables pour décrire des ressources. Un schéma organise ces termes en types et propriétés.
 
-Dans Schema.org : 
+Dans schema.org : 
 - un **type** désigne la catégorie d'un objet :
 `Person`, `Organization`, `Article`, `Recipe` ;
 - une **propriété** désigne une caractéristique ou une relation : `name`, `author`, `datePublished`, `image` ; 
@@ -238,31 +237,25 @@ documentation du vocabulaire.
 
 ## 2.4. Entités et désambiguïsation
 
-Un nom sous forme de texte ne suffit pas toujours à identifier une
-personne ou une organisation. Plusieurs entités peuvent porter le même
-nom.
+Un nom sous forme de texte ne suffit pas toujours à identifier une personne ou une organisation. Plusieurs entités peuvent porter le même nom.
 
 Il faut distinguer : 
 - une chaîne de caractères : « Christian Jacob » ; 
 - une entité de type `Person` ; 
 - une entité de type `Organization` ;
-- un identifiant ou un lien vers un référentiel qui précise de quelle
-entité il s'agit.
+- un identifiant ou un lien vers un référentiel qui précise de quelle entité il s'agit (le philologue vs l'homme politique).
 
-Exemple conceptuel :
+### Exemple conceptuel :
 
 Une page consacrée à un chercheur peut déclarer qu'il s'agit d'une personne, préciser son nom et son prénom, puis fournir un identifiant d'autorité ou un lien vers une base de connaissances. L'identifiant doit être vérifié : une référence erronée propage l'ambiguïté au lieu de la réduire.
 
 # 3. Trois approches d'annotation : Microdata, RDFa et JSON-LD
 
-Le cours a présenté trois mécanismes permettant d'associer des informations structurées à un contenu Web. Ils peuvent décrire des
-objets comparables, mais leur intégration dans le document diffère.
+Le cours a présenté trois mécanismes permettant d'associer des informations structurées à un contenu Web. Ils peuvent décrire des objets comparables, mais leur intégration dans le document diffère.
 
 ## 3.1. Microdata
 
-Microdata ajoute des attributs aux éléments HTML qui contiennent les
-informations décrites.
-
+Microdata ajoute des attributs aux éléments HTML qui contiennent les informations décrites.
   
 |  Attribut | Fonction | 
 | --- | --- |
@@ -280,18 +273,13 @@ informations décrites.
 </article>
 ```
 
-Le bloc `article` constitue l'objet décrit. Son type est `Article`. Le
-titre et la description sont deux propriétés de cet objet. L'intérêt
-pédagogique de Microdata tient à l'intégration directe de l'annotation
-dans le balisage qui porte le contenu.
+Le bloc `article` constitue l'objet décrit. Son type est `Article`. Le titre et la description sont deux propriétés de cet objet. L'intérêt pédagogique de Microdata tient à l'intégration directe de l'annotation dans le balisage qui porte le contenu.
 
 ## 3.2. RDFa
 
-RDFa permet d'exprimer des données RDF dans les attributs des éléments
-HTML ou XHTML. Il s'inscrit dans un environnement de description et de
-liaison des ressources.
+RDFa permet d'exprimer des données RDF dans les attributs des éléments HTML ou XHTML. Il s'inscrit dans un environnement de description et de liaison des ressources.
 
-Attributs courants : 
+### Attributs courants : 
 - `vocab` : vocabulaire utilisé ;
 - `typeof` : typede la ressource ; 
 - `property` : propriété décrite ; 
@@ -305,15 +293,11 @@ Attributs courants :
 </article>
 ```
 
-RDFa est particulièrement intéressant lorsque le projet s'inscrit dans
-un environnement RDF, dans des démarches de données liées ou dans des
-projets institutionnels et patrimoniaux.
+RDFa est particulièrement intéressant lorsque le projet s'inscrit dans un environnement RDF, dans des démarches de données liées ou dans des projets institutionnels et patrimoniaux.
 
 ## 3.3. JSON-LD
 
-JSON-LD exprime les données structurées sous forme d'un objet JSON,
-généralement inséré dans la page avec un élément `script` de type
-`application/ld+json`.
+JSON-LD exprime les données structurées sous forme d'un objet JSON, généralement inséré dans la page avec un élément `script` de type `application/ld+json`.
 
 ``` html
 <script type="application/ld+json">
@@ -326,10 +310,7 @@ généralement inséré dans la page avec un élément `script` de type
 </script>
 ```
 
-La description est séparée du balisage HTML qui présente visuellement le
-contenu. Cette séparation facilite souvent la génération des données
-structurées depuis une base de données ou un système de gestion de
-contenu.
+La description est séparée du balisage HTML qui présente visuellement le contenu. Cette séparation facilite souvent la génération des données structurées depuis une base de données ou un système de gestion de contenu.
 
 ## 3.4. Comparaison
 
