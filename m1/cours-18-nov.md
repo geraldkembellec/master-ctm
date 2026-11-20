@@ -28,11 +28,11 @@ Le fil directeur est de **décrire explicitement la nature des contenus, leurs p
 Une page Web contient des textes, images, dates, personnes, événements ou objets. Le lecteur humain déduit souvent leur signification de la mise en page et du contexte. Un agent logiciel a besoin d'indices explicites pour identifier ce qui est décrit.
 
 La structuration sémantique permet de passer d'une succession de contenus à une description organisée : 
-- **objet** : recette, article, personne, événement, organisation ; 
-- **propriétés** : nom, auteur, date, image, description ; 
-- **relations** : une recette est créée par une personne ; 
+- **objet** : (sujet) recette, article, personne, événement, organisation ; 
+- **propriétés** : (complément) nom, auteur, date, image, description ; 
+- **relations** : (verbe) une recette est créée par une personne ; 
 - un événement se déroule à une date et dans un lieu ; 
-- **identifiants** : références qui désignent une entité et permettent de la relier à des référentiels externes.
+- **identifiants** : références qui désignent une entité et permettent de la relier à des référentiels externes. Peut être utilisé comme **objet** ou **propriété**.
 
 La page est donc à la fois une _interface de lecture_ et un _document porteur d'une description structurée_.
 
@@ -44,7 +44,8 @@ La page est donc à la fois une _interface de lecture_ et un _document porteur d
 | Sémantique (attributs) | Qualifier les contenus  | `Recipe`, `Person`, `author`, `datePublished` |
 | Présentation (style : CSS)       | Définir l'apparence     |  couleurs, marges, typographie            |
 
-Une page peut être soignée graphiquement tout en étant pauvre sémantiquement. Inversement, une structure documentaire bien conçue peut recevoir plusieurs présentations grâce aux feuilles de style (CSS).
+Une page peut être __soignée graphiquement__ tout en étant __pauvre sémantiquement__. 
+Inversement, une structure documentaire bien conçue peut recevoir plusieurs présentations grâce aux feuilles de style (CSS).
 
 ## 1.3. Les éléments HTML sémantiques
 
