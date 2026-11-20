@@ -256,7 +256,7 @@ Le cours a présenté trois mécanismes permettant d'associer des informations s
 
 Microdata ajoute des attributs aux éléments HTML qui contiennent les informations décrites.
   
-|  Attribut | Fonction | 
+|   Attribut   | Fonction | 
 | --- | --- |
 |  `itemscope` |  Ouvre un objet décrit |
 | `itemtype`   |  Indique le type de l'objet |
@@ -272,11 +272,11 @@ Microdata ajoute des attributs aux éléments HTML qui contiennent les informati
 </article>
 ```
 
-Le bloc `article` constitue l'objet décrit. Son type est `Article`. Le titre et la description sont deux propriétés de cet objet. L'intérêt pédagogique de Microdata tient à l'intégration directe de l'annotation dans le balisage qui porte le contenu.
+Le bloc `article` constitue l'objet décrit. Son type est `Article`. Le titre et la description sont deux propriétés de cet objet. L'intérêt pédagogique de _Microdata_ tient à l'intégration directe de l'annotation dans le balisage qui porte le contenu.
 
 ## 3.2. RDFa
 
-RDFa permet d'exprimer des données RDF dans les attributs des éléments HTML ou XHTML. Il s'inscrit dans un environnement de description et de liaison des ressources.
+_RDFa_ permet d'exprimer des données RDF dans les attributs des éléments HTML ou xHTML. Il s'inscrit dans un environnement de description et de liaison des ressources.
 
 ### Attributs courants : 
 - `vocab` : vocabulaire utilisé ;
@@ -321,22 +321,13 @@ La description est séparée du balisage HTML qui présente visuellement le cont
 | Usages évoqués    | Annotation intégrée au HTML        | Projets RDF et documentaires      | Génération automatisée, indexation           |
 | Vigilance         | Imbrication et portée              | Maîtrise du modèle RDFa           | Cohérence avec le contenu réel               |
 
-Le choix dépend du contexte technique, des compétences de l'équipe, du
-système de publication, des exigences d'interopérabilité et des usages
-attendus. Le cours recommande de savoir réaliser une annotation
-manuellement pour en comprendre le mécanisme ; dans un projet réel, une
-génération automatisée depuis une base de données ou un CMS facilite la
-maintenance.
+Le choix dépend du contexte technique, des compétences de l'équipe, du système de publication, des exigences d'interopérabilité et des usages attendus. Le cours recommande de savoir réaliser une annotation manuellement pour en comprendre le mécanisme ; dans un projet réel, une génération automatisée depuis une base de données ou un CMS facilite la maintenance.
 
 # 4. Métadonnées documentaires et diffusion sociale
 
 ## 4.1. Décrire la page dans son ensemble
 
-Les métadonnées placées dans `head` décrivent la page et donnent des
-indications aux navigateurs, moteurs et plateformes. Elles peuvent
-porter sur le titre, la description, la langue, l'auteur ou
-l'organisation éditrice, l'image, les droits, l'identifiant, le sujet et
-la couverture temporelle ou spatiale.
+Les métadonnées placées dans `head` décrivent la page et donnent des indications aux navigateurs, moteurs et plateformes. Elles peuvent porter sur le titre, la description, la langue, l'auteur ou l'organisation éditrice, l'image, les droits, l'identifiant, le sujet et la couverture temporelle ou spatiale.
 
 ## 4.2. Dublin Core
 
