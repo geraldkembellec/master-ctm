@@ -34,7 +34,17 @@ La structuration sémantique permet de passer d'une (1) succession de contenus �
 
 ex : un événement se déroule à une date et dans un lieu à l'aide de références qui désignent une entité et permettent de la relier à des référentiels externes : les **identifiants**. Un identifiant être utilisé comme **objet** ou **propriété**.
 
-On en revient, pour un premier niveau, à une base de langage observationnel répondant à une approche issue du positivisme logique.
+On en revient, pour un premier niveau, à une base de langage descriptif répondant à un énoncé [analytique](https://fr.wikipedia.org/wiki/%C3%89nonc%C3%A9_analytique) si les informations sont portées par l'énoncé de manière ontologique, structurelle ou alors synthétique s'il y a un lien externe pour en décrire des valeurs.
+
+ex 1 : proposition analytique, (relation de classification) on sait que "Les misérables" est le titre (`name`) d'un objet de type livre (`Book`), donc c'est un livre :
+
+``` html
+<div itemscope itemtype="https://schema.org/Book">
+  <span itemprop="name">Les Misérables</span>
+</div>
+```
+
+ex 2 : proposition synthétique, "Les Misérables" a été écrit par Victor Hugo (information sur le monde exterieur).
 
 La page est donc à la fois une _interface de lecture_ et un _document porteur d'une description structurée_.
 
