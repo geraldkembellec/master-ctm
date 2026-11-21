@@ -69,7 +69,7 @@ Cette personne est nommée "Victor Hugo", identifiée et décrite dans une base 
 
 ``` html
 <div itemscope itemtype="https://schema.org/Book">
-  <span itemprop="name">Les Misérables</span>
+  <span itemprop="name">Les misérables</span>
   <div itemprop="author"
        itemscope
        itemtype="https://schema.org/Person"
