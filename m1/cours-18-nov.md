@@ -25,14 +25,16 @@ Le fil directeur est de **décrire explicitement la nature des contenus, leurs p
 
 ## 1.1. Du contenu à sa description
 
-Une page Web contient des textes, images, dates, personnes, événements ou objets. Le lecteur humain déduit souvent leur signification de la mise en page et du contexte. Un agent logiciel a besoin d'indices explicites pour identifier ce qui est décrit.
+Une page Web contient des textes, images, dates, personnes, événements ou objets. Le lecteur humain déduit souvent leur signification de la mise en page et du contexte. Un agent logiciel a besoin d'indices explicites pour faciliter et accélérer la compréhension et l'identification ce qui est décrit sans passer par un couteux traitement informatique, potentiellement erroné. 
 
-La structuration sémantique permet de passer d'une succession de contenus à une description organisée : 
+La structuration sémantique permet de passer d'une (1) succession de contenus à leur (2) description organisée : 
 - **objet** : (sujet) recette, article, personne, événement, organisation ; 
 - **propriétés** : (complément) nom, auteur, date, image, description ; 
 - **relations** : (verbe) une recette est créée par une personne ; 
-- un événement se déroule à une date et dans un lieu ; 
-- **identifiants** : références qui désignent une entité et permettent de la relier à des référentiels externes. Peut être utilisé comme **objet** ou **propriété**.
+
+ex : un événement se déroule à une date et dans un lieu à l'aide de références qui désignent une entité et permettent de la relier à des référentiels externes : les **identifiants**. Un identifiant être utilisé comme **objet** ou **propriété**.
+
+On en revient 
 
 La page est donc à la fois une _interface de lecture_ et un _document porteur d'une description structurée_.
 
