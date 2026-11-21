@@ -25,18 +25,26 @@ Le fil directeur est de **décrire explicitement la nature des contenus, leurs p
 
 ## 1.1. Du contenu à sa description
 
-Une page Web contient des textes, images, dates, personnes, événements ou objets. Le lecteur humain déduit souvent leur signification de la mise en page et du contexte. Un agent logiciel a besoin d'indices explicites pour faciliter et accélérer la compréhension et l'identification ce qui est décrit sans passer par un couteux traitement informatique, potentiellement erroné. 
+Une page Web contient des textes, images, dates, personnes, événements ou objets. Le lecteur humain déduit souvent leur signification de la mise en page et du contexte.
+Un agent logiciel a besoin d’informations explicites pour identifier et interpréter ces contenus, sans devoir analyser intégralement la page par des traitements informatiques complexes, parfois coûteux ou imprécis.
 
 La structuration sémantique permet de passer d'une (1) succession de contenus à leur (2) description organisée : 
 - **objet** : (sujet) recette, article, personne, événement, organisation ; 
-- **propriétés** : (complément) nom, auteur, date, image, description ; 
-- **relations** : (verbe) une recette est créée par une personne ; 
+- **propriété** : (complément) nom, auteur, date, image, description ; 
+- **relations** : (verbe) une recette est créée par une personne ; un événement se déroule dans un lieu.
 
 ex : un événement se déroule à une date et dans un lieu à l'aide de références qui désignent une entité et permettent de la relier à des référentiels externes : les **identifiants**. Un identifiant être utilisé comme **objet** ou **propriété**.
 
 On en revient, pour un premier niveau, à une base de langage descriptif répondant à un énoncé [analytique](https://fr.wikipedia.org/wiki/%C3%89nonc%C3%A9_analytique) si les informations sont portées par l'énoncé de manière ontologique, structurelle ou alors synthétique s'il y a un lien externe pour en décrire des valeurs.
 
-ex 1 : proposition analytique, (relation de classification) on sait que "Les misérables" est le titre (`name`) d'un objet de type livre (`Book`), donc c'est un livre :
+Comprendre la nature des informations décrites
+
+La description structurée permet de représenter différentes formes de connaissances. On peut notamment distinguer, pour comprendre leur portée, les propositions __*analytiques*__ et les propositions __*synthétiques*__ :
+
+* Une proposition analytique explicite une connaissance contenue dans la définition même d’un concept. Par exemple, un triangle possède trois côtés. C'est valable pour tous les triangles.
+* Une proposition synthétique apporte une information supplémentaire sur une chose ou sur le monde. Par exemple, ce triangle est rouge.
+
+__ex 1 : proposition analytique__, (relation de classification) on sait que "Les misérables" est le titre (`name`) d'un objet de type livre (`Book`), donc c'est un livre :
 
 ``` html
 <div itemscope itemtype="https://schema.org/Book">
@@ -44,7 +52,7 @@ ex 1 : proposition analytique, (relation de classification) on sait que "Les mis
 </div>
 ```
 
-ex 2 : proposition synthétique, "Les Misérables" a été écrit par Victor Hugo (information sur le monde extérieur).
+__ex 2 : proposition synthétique__, "Les Misérables" a été écrit par Victor Hugo (information sur le monde extérieur).
 ``` html
 <div itemscope itemtype="https://schema.org/Book">
   <span itemprop="name">Les Misérables</span>
@@ -52,7 +60,7 @@ ex 2 : proposition synthétique, "Les Misérables" a été écrit par Victor Hug
 </div>
 ```
 
-ex 3 : Proposition hybride, "Les Misérables" est un objet de type livre `Book` (proposition analytique),  rédigé par un auteur (proposition analytique) qui est une personne (proposition analytique). 
+__ex 3 : Proposition documentaire hybride__, "Les Misérables" est un objet de type livre `Book` (proposition analytique),  rédigé par un auteur (proposition analytique) qui est une personne (proposition analytique). 
 Cette personne est nommée "Victor Hugo", identifiée et décrite dans une base de connaissances extérieure : l'ISNI. Cette dernière relation est un proposition **synthétique**, ce n'est pas un élément structurel.
 
 - Ici si l'on dit qu'un livre a un titre et un auteur, c'est structurel (proposition analytique).
