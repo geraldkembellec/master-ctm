@@ -7,17 +7,17 @@
 ---------------------------------------------------------
 ## Présentation et objectifs
 
-Cette séance étudie la manière de concevoir une page Web comme un document structuré, interprétable par des personnes et par des agents logiciels : navigateurs, moteurs de recherche, plateformes de diffusion, outils de moissonnage et systèmes fondés sur les grands modèles de langage.
+Cette séance étudie la manière de concevoir une page Web comme un document structuré, interprétable par des personnes et par des agents logiciels : navigateurs, moteurs de recherche, plateformes de diffusion, outils de moissonnage et systèmes IA fondés sur les grands modèles de langage (LLM).
 
 Le fil directeur est de **décrire explicitement la nature des contenus, leurs propriétés et leurs relations afin d'en faciliter l'identification, l'indexation, la circulation et la réutilisation**.
 
 ### À l'issue du module, l'étudiant doit pouvoir : 
-- distinguer structure HTML, sémantique documentaire et présentation graphique ; 
+- distinguer (1) structure HTML, (2) sémantique documentaire et (3) présentation graphique ; 
 - expliquer l'intérêt des données structurées pour l'indexation et le moissonnage ; 
-- distinguer *Microdata*, *RDFa* et *JSON-LD* ; 
-- comprendre la logique des types et propriétés de Schema.org ; 
+- distinguer formats technique de sémantique documentaire *Microdata*, *RDFa* et *JSON-LD* ; 
+- comprendre la logique des types et propriétés sémantique documentaire du *Dublin Core* et de *Schema.org* ; 
 - annoter une page HTML avec les microdonnées (*microdata*) ; 
-- préparer les métadonnées documentaires et sociales d'une page ; 
+- préparer la sémantique des métadonnées documentaires et sociales d'une page ; 
 - contrôler la qualité HTML et sémantique d'un document ; 
 - raisonner le chargement des ressources multimédias et planifier un projet.
 
