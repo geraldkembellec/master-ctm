@@ -52,6 +52,19 @@ ex 2 : proposition synthétique, "Les Misérables" a été écrit par Victor Hug
 </div>
 ```
 
+ex 3 : Proposition hybride, "Les Misérables" est un objet de type livre `Book` (proposition analytique),  rédigé par un auteur qui est une personne (proposition analytique) et pas un organisme ou un collectif donc. Cette personne est nommée "Victor Hugo", identifiée et décrite dans une base de connaissances extérieure : l'ISNI. Cette deuxième relation est un proposition synthétique, ce n'est pas un élément structurel.
+
+``` html
+<div itemscope itemtype="https://schema.org/Book">
+  <span itemprop="name">Les Misérables</span>
+  <div itemprop="author"
+       itemscope
+       itemtype="https://schema.org/Person"
+       itemid="https://isni.org/isni/0000000121200982">
+    <span itemprop="name">Victor Hugo</span>
+  </div>
+</div>
+```
 La page est donc à la fois une _interface de lecture_ et un _document porteur d'une description structurée_.
 
 ## 1.2. Trois niveaux complémentaires
