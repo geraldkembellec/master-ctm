@@ -52,7 +52,12 @@ ex 2 : proposition synthétique, "Les Misérables" a été écrit par Victor Hug
 </div>
 ```
 
-ex 3 : Proposition hybride, "Les Misérables" est un objet de type livre `Book` (proposition analytique),  rédigé par un auteur qui est une personne (proposition analytique) et pas un organisme ou un collectif donc. Cette personne est nommée "Victor Hugo", identifiée et décrite dans une base de connaissances extérieure : l'ISNI. Cette deuxième relation est un proposition synthétique, ce n'est pas un élément structurel.
+ex 3 : Proposition hybride, "Les Misérables" est un objet de type livre `Book` (proposition analytique),  rédigé par un auteur (proposition analytique) qui est une personne (proposition analytique). 
+Cette personne est nommée "Victor Hugo", identifiée et décrite dans une base de connaissances extérieure : l'ISNI. Cette dernière relation est un proposition **synthétique**, ce n'est pas un élément structurel.
+
+- Ici si l'on dit qu'un livre a un titre et un auteur, c'est structurel (proposition analytique).
+- Que Victor Hugo est une personne et pas un organisme ou un collectif donc, c'est structurel (proposition analytique).
+- Que Victor Hugo est l'auteur de "Les Misérables", c'est une proposition synthétique.
 
 ``` html
 <div itemscope itemtype="https://schema.org/Book">
