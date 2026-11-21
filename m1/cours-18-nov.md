@@ -34,7 +34,7 @@ La structuration sémantique permet de passer d'une (1) succession de contenus �
 
 ex : un événement se déroule à une date et dans un lieu à l'aide de références qui désignent une entité et permettent de la relier à des référentiels externes : les **identifiants**. Un identifiant être utilisé comme **objet** ou **propriété**.
 
-On en revient 
+On en revient, pour un premier niveau, à une base de langage observationnel répondant à une approche issue du positivisme logique.
 
 La page est donc à la fois une _interface de lecture_ et un _document porteur d'une description structurée_.
 
