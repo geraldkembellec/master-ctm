@@ -48,19 +48,19 @@ __ex 1 : proposition analytique__, (relation de classification) on sait que "Les
 
 ``` html
 <div itemscope itemtype="https://schema.org/Book">
-  <span itemprop="name">Les Misérables</span>
+  <span itemprop="name">Les misérables</span>
 </div>
 ```
 
-__ex 2 : proposition synthétique__, "Les Misérables" a été écrit par Victor Hugo (information sur le monde extérieur).
+__ex 2 : proposition synthétique__, "Les misérables" a été écrit par Victor Hugo (information sur le monde extérieur).
 ``` html
 <div itemscope itemtype="https://schema.org/Book">
-  <span itemprop="name">Les Misérables</span>
+  <span itemprop="name">Les misérables</span>
   <span itemprop="author">Victor Hugo</span>
 </div>
 ```
 
-__ex 3 : Proposition documentaire hybride__, "Les Misérables" est un objet de type livre `Book` (proposition analytique),  rédigé par un auteur (proposition analytique) qui est une personne (proposition analytique). 
+__ex 3 : Proposition documentaire hybride__, "Les misérables" est un objet de type livre `Book` (proposition analytique), rédigé par un auteur (proposition analytique) qui est une personne (proposition analytique). 
 Cette personne est nommée "Victor Hugo", identifiée et décrite dans une base de connaissances extérieure : l'ISNI. Cette dernière relation est un proposition **synthétique**, ce n'est pas un élément structurel.
 
 - Ici si l'on dit qu'un livre a un titre et un auteur, c'est structurel (proposition analytique).
