@@ -44,7 +44,13 @@ ex 1 : proposition analytique, (relation de classification) on sait que "Les mis
 </div>
 ```
 
-ex 2 : proposition synthétique, "Les Misérables" a été écrit par Victor Hugo (information sur le monde exterieur).
+ex 2 : proposition synthétique, "Les Misérables" a été écrit par Victor Hugo (information sur le monde extérieur).
+``` html
+<div itemscope itemtype="https://schema.org/Book">
+  <span itemprop="name">Les Misérables</span>
+  <span itemprop="author">Victor Hugo</span>
+</div>
+```
 
 La page est donc à la fois une _interface de lecture_ et un _document porteur d'une description structurée_.
 
