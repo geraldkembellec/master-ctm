@@ -1,9 +1,6 @@
 # Web sémantique et ingénierie documentaire des contenus Web
-
 ## Support d'apprentissage - Master 1 CTM
-
 ### Séance du 18 novembre 2026 --- parties 1 et 2
-
 ---------------------------------------------------------
 ## Présentation et objectifs
 
@@ -27,58 +24,6 @@ Le fil directeur est de **décrire explicitement la nature des contenus, leurs p
 
 Une page Web contient des textes, images, dates, personnes, événements ou objets. Le lecteur humain déduit souvent leur signification de la mise en page et du contexte.
 Un agent logiciel a besoin d’informations explicites pour identifier et interpréter ces contenus, sans devoir analyser intégralement la page par des traitements informatiques complexes, parfois coûteux ou imprécis.
-
-La structuration sémantique permet de passer d'une (1) succession de contenus à leur (2) description organisée : 
-- **objet** : (sujet) recette, article, personne, événement, organisation ; 
-- **propriété** : (complément) nom, auteur, date, image, description ; 
-- **relations** : (verbe) une recette est créée par une personne ; un événement se déroule dans un lieu.
-
-ex : un événement se déroule à une date et dans un lieu à l'aide de références qui désignent une entité et permettent de la relier à des référentiels externes : les **identifiants**. Un identifiant être utilisé comme **objet** ou **propriété**.
-
-On en revient, pour un premier niveau, à une base de langage descriptif répondant à un énoncé [analytique](https://fr.wikipedia.org/wiki/%C3%89nonc%C3%A9_analytique) si les informations sont portées par l'énoncé de manière ontologique, structurelle ou alors synthétique s'il y a un lien externe pour en décrire des valeurs.
-
-Comprendre la nature des informations décrites
-
-La description structurée permet de représenter différentes formes de connaissances. On peut notamment distinguer, pour comprendre leur portée, les propositions __*analytiques*__ et les propositions __*synthétiques*__ :
-
-* Une proposition analytique explicite une connaissance contenue dans la définition même d’un concept. Par exemple, un triangle possède trois côtés. C'est valable pour tous les triangles.
-* Une proposition synthétique apporte une information supplémentaire sur une chose ou sur le monde. Par exemple, ce triangle est rouge.
-
-__ex 1 : proposition analytique__, (relation de classification) on sait que "Les misérables" est le titre (`name`) d'un objet de type livre (`Book`), donc c'est un livre :
-
-``` html
-<div itemscope itemtype="https://schema.org/Book">
-  <span itemprop="name">Les misérables</span>
-</div>
-```
-
-__ex 2 : proposition synthétique__, "Les misérables" a été écrit par Victor Hugo (information sur le monde extérieur).
-``` html
-<div itemscope itemtype="https://schema.org/Book">
-  <span itemprop="name">Les misérables</span>
-  <span itemprop="author">Victor Hugo</span>
-</div>
-```
-
-__ex 3 : Proposition documentaire hybride__, "Les misérables" est un objet de type livre `Book` (proposition analytique), rédigé par un auteur (proposition analytique) qui est une personne (proposition analytique). 
-Cette personne est nommée "Victor Hugo", identifiée et décrite dans une base de connaissances extérieure : l'ISNI. Cette dernière relation est un proposition **synthétique**, ce n'est pas un élément structurel.
-
-- Ici si l'on dit qu'un livre a un titre et un auteur, c'est structurel (proposition analytique).
-- Que Victor Hugo est une personne et pas un organisme ou un collectif donc, c'est structurel (proposition analytique).
-- Que Victor Hugo est l'auteur de "Les Misérables", c'est une proposition synthétique.
-
-``` html
-<div itemscope itemtype="https://schema.org/Book">
-  <span itemprop="name">Les misérables</span>
-  <div itemprop="author"
-       itemscope
-       itemtype="https://schema.org/Person"
-       itemid="https://isni.org/isni/0000000121200982">
-    <span itemprop="name">Victor Hugo</span>
-  </div>
-</div>
-```
-La page est donc à la fois une _interface de lecture_ et un _document porteur d'une description structurée_.
 
 ## 1.2. Trois niveaux complémentaires
 
@@ -291,6 +236,58 @@ Il faut distinguer :
 ### Exemple conceptuel :
 
 Une page consacrée à un chercheur peut déclarer qu'il s'agit d'une personne, préciser son nom et son prénom, puis fournir un identifiant d'autorité ou un lien vers une base de connaissances. L'identifiant doit être vérifié : une référence erronée propage l'ambiguïté au lieu de la réduire.
+
+La structuration sémantique permet de passer d'une (1) succession de contenus à leur (2) description organisée : 
+- **objet** : (sujet) recette, article, personne, événement, organisation ; 
+- **propriété** : (complément) nom, auteur, date, image, description ; 
+- **relations** : (verbe) une recette est créée par une personne ; un événement se déroule dans un lieu.
+
+ex : un événement se déroule à une date et dans un lieu à l'aide de références qui désignent une entité et permettent de la relier à des référentiels externes : les **identifiants**. Un identifiant être utilisé comme **objet** ou **propriété**.
+
+On en revient, pour un premier niveau, à une base de langage descriptif répondant à un énoncé [analytique](https://fr.wikipedia.org/wiki/%C3%89nonc%C3%A9_analytique) si les informations sont portées par l'énoncé de manière ontologique, structurelle ou alors synthétique s'il y a un lien externe pour en décrire des valeurs.
+
+Comprendre la nature des informations décrites
+
+La description structurée permet de représenter différentes formes de connaissances. On peut notamment distinguer, pour comprendre leur portée, les propositions __*analytiques*__ et les propositions __*synthétiques*__ :
+
+* Une proposition analytique explicite une connaissance contenue dans la définition même d’un concept. Par exemple, un triangle possède trois côtés. C'est valable pour tous les triangles.
+* Une proposition synthétique apporte une information supplémentaire sur une chose ou sur le monde. Par exemple, ce triangle est rouge.
+
+__ex 1 : proposition analytique__, (relation de classification) on sait que "Les misérables" est le titre (`name`) d'un objet de type livre (`Book`), donc c'est un livre :
+
+``` html
+<div itemscope itemtype="https://schema.org/Book">
+  <span itemprop="name">Les misérables</span>
+</div>
+```
+
+__ex 2 : proposition synthétique__, "Les misérables" a été écrit par Victor Hugo (information sur le monde extérieur).
+``` html
+<div itemscope itemtype="https://schema.org/Book">
+  <span itemprop="name">Les misérables</span>
+  <span itemprop="author">Victor Hugo</span>
+</div>
+```
+
+__ex 3 : Proposition documentaire hybride__, "Les misérables" est un objet de type livre `Book` (proposition analytique), rédigé par un auteur (proposition analytique) qui est une personne (proposition analytique). 
+Cette personne est nommée "Victor Hugo", identifiée et décrite dans une base de connaissances extérieure : l'ISNI. Cette dernière relation est un proposition **synthétique**, ce n'est pas un élément structurel.
+
+- Ici si l'on dit qu'un livre a un titre et un auteur, c'est structurel (proposition analytique).
+- Que Victor Hugo est une personne et pas un organisme ou un collectif donc, c'est structurel (proposition analytique).
+- Que Victor Hugo est l'auteur de "Les Misérables", c'est une proposition synthétique.
+
+``` html
+<div itemscope itemtype="https://schema.org/Book">
+  <span itemprop="name">Les misérables</span>
+  <div itemprop="author"
+       itemscope
+       itemtype="https://schema.org/Person"
+       itemid="https://isni.org/isni/0000000121200982">
+    <span itemprop="name">Victor Hugo</span>
+  </div>
+</div>
+```
+La page est donc à la fois une _interface de lecture_ et un _document porteur d'une description structurée_.
 
 # 3. Trois approches d'annotation : Microdata, RDFa et JSON-LD
 
