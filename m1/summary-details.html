@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="utf-8">
+    <title>Présenter une image</title>
+  </head>
+  <body>
+    <article>
+      <h1>Présenter une image</h1>
+      <details>
+        <summary title="clickez pour afficher/masquer">Une image en ligne</summary>
+        <img src="https://formations.pantheonsorbonne.fr/_object/ametys%253Aplugins/odf/ametys%253Acontents/subprogram-subprogram1-master-parcours-communication-du-savoir-technologies-de-la-connaissance-et-management-de-l-information-fr/_attribute/illustration/image/20180702-0192-HDR_1930x1286_crop360x1903.jpg"
+             alt="Fronton de la Sorbonne, vue depuis la place de la Sorbonne, avec des branchages d'arbres" 
+             title="La Sorbonne"
+             width="100%" >
+      </detail>
+      <section>
+         <h2>Une image en local</h2>
+        <img src="assets/sorbonne-feuillage-bandeau-HD.jpg" width="900" height="120"
+             alt="Fronton de la Sorbonne, vue depuis la place de la Sorbonne, avec des branchages d'arbres" 
+             title="La Sorbonne">
+      </section>
+      <section>
+        <h2>Une image en sourceset</h2>
+        <p>On va charger une image de préférence, sinon l'autre. Ici en remier WebP, sinon jpg si le navigateur ne gère pas</p>
+        <picture>
+          <source
+            srcset="assets/sorbonne-feuillage-bandeau-HD.webp"
+            type="image/webp" title="image en webp">
+          <source
+            srcset ="assets/sorbonne-feuillage-bandeau-HD.jpg"
+            type="image/jpeg" title="image en jpeg">
+            <figcaption>La Sorbonne, Université Paris 1, Panthéon Sorbonne, copyright 2026</figcaption>    
+          </picture>
+      </section>
+    </article>
+  </body>
+</html>
